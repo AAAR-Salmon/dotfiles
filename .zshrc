@@ -18,6 +18,12 @@ if ! zplug check --verbose; then
 fi
 zplug load
 
+# Configure completion
+autoload -Uz compinit && compinit
+zstyle ':completion:*' matcher 'm:{a-z}={A-Z}'
+# https://qiita.com/minnsou/items/3e9f200f9f2cc9a92920
+zstyle ':completion:*' completer _complete _approximate _prefix
+
 # Reset keybinds
 bindkey -d
 
