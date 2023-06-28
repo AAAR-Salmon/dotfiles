@@ -50,6 +50,7 @@ alias ls='ls --color=auto'
 ## not working zplug's tag of `use:`/`hook-load:` for some reason
 source $ZPLUG_REPOS/olets/zsh-abbr/zsh-abbr.zsh
 export ABBR_FORCE=1
+export ABBR_QUIET=1
 abbr add --session ..='cd ..'
 abbr add --session ...='cd ../..'
 abbr add --session ....='cd ../../..'
