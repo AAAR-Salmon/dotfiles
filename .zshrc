@@ -46,6 +46,9 @@ alias rm='trash-put'
 alias mv='mv -i'
 alias cp='cp -i'
 alias ls='ls --color=auto'
+function mkcd() {
+  mkdir $1 && cd $1
+}
 
 ## not working zplug's tag of `use:`/`hook-load:` for some reason
 source $ZPLUG_REPOS/olets/zsh-abbr/zsh-abbr.zsh
