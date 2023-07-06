@@ -79,7 +79,8 @@ abbr add --session d='docker'
 abbr add --session v='nvim'
 
 # Load PATH settings
-if [ -r $HOME/.path.zsh ]; then
-  source $HOME/.path.zsh
-fi
+# !! Use `.zshenv` file instead
+# if [ -r $HOME/.path.zsh ]; then
+#   source $HOME/.path.zsh
+# fi
 
