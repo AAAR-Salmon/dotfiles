@@ -1,8 +1,8 @@
-# Created by newuser for 5.8.1
+## Created by newuser for 5.8.1
 
-# Plugins
+## Plugins
 source ~/.zplug/init.zsh
-## Self-manage zplug 
+# Self-manage zplug
 zplug 'zplug/zplug', hook-build:'zplug --self-manage'
 zplug 'mafredri/zsh-async', as:plugin
 
@@ -18,30 +18,30 @@ if ! zplug check --verbose; then
 fi
 zplug load
 
-# Configure completion
+## Configure completion
 autoload -Uz compinit && compinit
 zstyle ':completion:*' matcher 'm:{a-z}={A-Z}'
 # https://qiita.com/minnsou/items/3e9f200f9f2cc9a92920
 zstyle ':completion:*' completer _complete _approximate _prefix
 
-# Reset keybinds
+## Reset keybinds
 bindkey -d
 
 bindkey '^K' history-substring-search-up
 bindkey '^J' history-substring-search-down
 
-# Config command history
+## Config command history
 export HISTFILE="$HOME/.history"
 export HISTSIZE=1000
 export SAVEHIST=10000
 
-# Set prompt color
+## Set prompt color
 zstyle ':prompt:pure:path' color cyan
 zstyle ':prompt:pure:prompt:success' color green
 zstyle ':prompt:pure:prompt:error' color red
 zstyle ':prompt:pure:git:stash' show true
 
-# Alias/Abbreviation
+## Alias/Abbreviation
 alias rm='trash-put'
 alias mv='mv -i'
 alias cp='cp -i'
@@ -50,7 +50,7 @@ function mkcd() {
   mkdir $1 && cd $1
 }
 
-## not working zplug's tag of `use:`/`hook-load:` for some reason
+# not working zplug's tag of `use:`/`hook-load:` for some reason
 source $ZPLUG_REPOS/olets/zsh-abbr/zsh-abbr.zsh
 export ABBR_FORCE=1
 export ABBR_QUIET=1
@@ -78,7 +78,7 @@ abbr add --session gp='git pull --prune'
 abbr add --session d='docker'
 abbr add --session v='nvim'
 
-# Load PATH settings
+## Load PATH settings
 # !! Use `.zshenv` file instead
 # if [ -r $HOME/.path.zsh ]; then
 #   source $HOME/.path.zsh
