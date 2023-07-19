@@ -16,5 +16,6 @@ require('jetpack.packer').add {
       vim.g.mkdp_filetypes = {'markdown'}
     end,
     ft = {'markdown'},
-  }
+  },
+  {'bronson/vim-trailing-whitespace'}
 }
