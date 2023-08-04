@@ -77,6 +77,7 @@ abbr add --session gg='git log --all --oneline --graph'
 abbr add --session gp='git pull --prune'
 abbr add --session d='docker'
 abbr add --session v='nvim'
+abbr add --session t='tmux'
 
 ## Load PATH settings
 # !! Use `.zshenv` file instead
