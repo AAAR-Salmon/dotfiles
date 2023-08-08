@@ -17,5 +17,11 @@ require('jetpack.packer').add {
     end,
     ft = {'markdown'},
   },
-  {'bronson/vim-trailing-whitespace'}
+  {'bronson/vim-trailing-whitespace'},
+  {
+    'nmac427/guess-indent.nvim',
+    config = function()
+      require('guess-indent').setup {}
+    end,
+  },
 }
