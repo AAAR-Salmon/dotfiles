@@ -5,7 +5,14 @@ require('jetpack.packer').add {
   {'lambdalisue/fern.vim'},
   {'lambdalisue/fern-hijack.vim'},
   {'yuki-yano/fern-preview.vim'},
-  {'vim-airline/vim-airline'},
+  {
+    'itchyny/lightline.vim',
+    config = function()
+      vim.g.lightline = {
+        colorscheme = 'jellybeans',
+      }
+    end,
+  },
   {'ervandew/supertab'},
   {'rebelot/kanagawa.nvim'},
   {'vim-jp/autofmt'},
