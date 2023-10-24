@@ -1,7 +1,12 @@
 ## Created by newuser for 5.8.1
 
 ## Plugins
-source ~/.zplug/init.zsh
+export ZPLUG_HOME="$HOME/.local/share/zplug"
+if ! [ -d "$ZPLUG_HOME" ]; then
+  git clone 'https://github.com/zplug/zplug.git' "$ZPLUG_HOME"
+fi
+
+source "$ZPLUG_HOME/init.zsh"
 # Self-manage zplug
 zplug 'zplug/zplug', hook-build:'zplug --self-manage'
 zplug 'mafredri/zsh-async', as:plugin
