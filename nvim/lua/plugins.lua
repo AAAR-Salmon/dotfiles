@@ -54,4 +54,5 @@ require('jetpack.packer').add {
       require('guess-indent').setup {}
     end,
   },
+  {'rhysd/conflict-marker.vim'},
 }
