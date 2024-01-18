@@ -90,3 +90,6 @@ abbr add --session t='tmux'
 #   source $HOME/.path.zsh
 # fi
 
+## Save history immediately
+setopt incappendhistory
+
