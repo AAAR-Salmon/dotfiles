@@ -55,6 +55,12 @@ alias ls='ls --color=auto'
 function mkcd() {
   mkdir $1 && cd $1
 }
+function cd-git-dir() {
+  if ! git rev-parse --is-inside-work-tree >/dev/null 2>&1; then
+    return 1
+  fi
+  cd "$(git rev-parse --show-toplevel)"
+}
 
 # not working zplug's tag of `use:`/`hook-load:` for some reason
 source $ZPLUG_REPOS/olets/zsh-abbr/zsh-abbr.zsh
@@ -66,6 +72,7 @@ abbr add --session ....='cd ../../..'
 abbr add --session l='ls -F'
 abbr add --session la='ls -AF'
 abbr add --session ll='ls -lhAF'
+abbr add --session cg='cd-git-dir'
 abbr add --session g='git'
 abbr add --session gs='git status'
 abbr add --session ga='git add'
