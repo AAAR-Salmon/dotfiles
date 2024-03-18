@@ -91,6 +91,7 @@ abbr add --session gp='git pull --prune'
 abbr add --session d='docker'
 abbr add --session v='nvim'
 abbr add --session t='tmux'
+abbr add --session f='fuck'
 
 ## Load PATH settings
 # !! Use `.zshenv` file instead
