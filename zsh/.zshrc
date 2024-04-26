@@ -15,7 +15,6 @@ zplug 'zsh-users/zsh-completions', as:plugin
 zplug 'zsh-users/zsh-autosuggestions', as:plugin
 zplug 'zsh-users/zsh-history-substring-search', as:plugin
 zplug 'olets/zsh-abbr', as:plugin  # use not working
-zplug 'joshskidmore/zsh-fzf-history-search', as:plugin
 
 zplug 'sindresorhus/pure', use:pure.zsh, as:theme
 
@@ -102,4 +101,4 @@ abbr add --session f='fuck'
 ## Save history immediately
 setopt incappendhistory
 
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+command -v fzf >/dev/null && eval "$(fzf --zsh)"
