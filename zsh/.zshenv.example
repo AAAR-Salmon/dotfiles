@@ -1,0 +1,6 @@
+# do `(cd HERE; cp .zshenv.example .zshenv; ln -s "$(pwd)/.zshenv" ~/.zshenv)`
+export DOTFILES="$HOME/your/dotfiles/path"
+export ZDOTDIR="$DOTFILES/zsh"
+
+export PATH="$PATH:$HOME/.local/bin"
+
