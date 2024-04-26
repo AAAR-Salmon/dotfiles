@@ -20,4 +20,5 @@ config:
      apitype: github
 releases:
   - repo: rjbrown57/binman
+  - repo: jqlang/jq
   - repo: junegunn/fzf
