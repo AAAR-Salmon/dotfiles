@@ -4,6 +4,7 @@ opt.syntax = 'on'
 
 opt.number = true
 
+opt.smartcase = true
 opt.incsearch = true
 opt.hlsearch = true
 
