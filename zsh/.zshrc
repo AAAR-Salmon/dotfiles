@@ -92,12 +92,6 @@ abbr add --session v='nvim'
 abbr add --session t='tmux'
 abbr add --session f='fuck'
 
-## Load PATH settings
-# !! Use `.zshenv` file instead
-# if [ -r $HOME/.path.zsh ]; then
-#   source $HOME/.path.zsh
-# fi
-
 ## Save history immediately
 setopt incappendhistory
 
