@@ -55,4 +55,5 @@ require('jetpack.packer').add {
     end,
   },
   {'rhysd/conflict-marker.vim'},
+  {'machakann/vim-sandwich'},
 }
