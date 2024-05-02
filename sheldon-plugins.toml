@@ -21,9 +21,6 @@ github = 'zsh-users/zsh-completions'
 [plugins.zsh-autosuggestions]
 github = 'zsh-users/zsh-autosuggestions'
 
-[plugins.zsh-history-search]
-github = 'zsh-users/zsh-history-substring-search'
-
 [plugins.zsh-abbr]
 github = 'olets/zsh-abbr'
 use = ['zsh-abbr.plugin.zsh']
