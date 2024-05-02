@@ -1,27 +1,8 @@
 ## Created by newuser for 5.8.1
 
-## Plugins
-export ZPLUG_HOME="$HOME/.local/share/zplug"
-if ! [ -d "$ZPLUG_HOME" ]; then
-  git clone 'https://github.com/zplug/zplug.git' "$ZPLUG_HOME"
-fi
 
-source "$ZPLUG_HOME/init.zsh"
-# Self-manage zplug
-zplug 'zplug/zplug', hook-build:'zplug --self-manage'
-zplug 'mafredri/zsh-async', as:plugin
-
-zplug 'zsh-users/zsh-completions', as:plugin
-zplug 'zsh-users/zsh-autosuggestions', as:plugin
-zplug 'zsh-users/zsh-history-substring-search', as:plugin
-zplug 'olets/zsh-abbr', as:plugin  # use not working
-
-zplug 'sindresorhus/pure', use:pure.zsh, as:theme
-
-if ! zplug check --verbose; then
-  zplug install
-fi
-zplug load
+## Load plugins
+eval "$(sheldon source)"
 
 ## Configure completion
 autoload -Uz compinit && compinit
@@ -62,7 +43,7 @@ function cd-git-dir() {
 }
 
 # not working zplug's tag of `use:`/`hook-load:` for some reason
-source $ZPLUG_REPOS/olets/zsh-abbr/zsh-abbr.zsh
+source $HOME/.local/share/sheldon/repos/github.com/olets/zsh-abbr/zsh-abbr.plugin.zsh
 export ABBR_FORCE=1
 export ABBR_QUIET=1
 abbr add --session ..='cd ..'
