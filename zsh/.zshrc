@@ -1,5 +1,8 @@
 ## Created by newuser for 5.8.1
 
+## Reset keybinds
+bindkey -d
+bindkey -e
 
 ## Load plugins
 eval "$(sheldon source)"
@@ -9,12 +12,6 @@ autoload -Uz compinit && compinit
 zstyle ':completion:*' matcher 'm:{a-z}={A-Z}'
 # https://qiita.com/minnsou/items/3e9f200f9f2cc9a92920
 zstyle ':completion:*' completer _complete _approximate _prefix
-
-## Reset keybinds
-bindkey -d
-
-bindkey '^K' history-substring-search-up
-bindkey '^J' history-substring-search-down
 
 ## Config command history
 export HISTFILE="$HOME/.history"
@@ -42,8 +39,6 @@ function cd-git-dir() {
   cd "$(git rev-parse --show-toplevel)"
 }
 
-# not working zplug's tag of `use:`/`hook-load:` for some reason
-source $HOME/.local/share/sheldon/repos/github.com/olets/zsh-abbr/zsh-abbr.plugin.zsh
 export ABBR_FORCE=1
 export ABBR_QUIET=1
 abbr add --session ..='cd ..'
