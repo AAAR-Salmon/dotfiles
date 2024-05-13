@@ -24,7 +24,7 @@ zstyle ':prompt:pure:prompt:success' color green
 zstyle ':prompt:pure:prompt:error' color red
 zstyle ':prompt:pure:git:stash' show true
 
-## Alias/Abbreviation
+## Alias
 alias rm='trash-put'
 alias mv='mv -i'
 alias cp='cp -i'
@@ -41,37 +41,6 @@ function cd-git-dir() {
 
 export ABBR_FORCE=1
 export ABBR_QUIET=1
-abbr add --session ..='cd ..'
-abbr add --session ...='cd ../..'
-abbr add --session ....='cd ../../..'
-abbr add --session l='ls -F'
-abbr add --session la='ls -AF'
-abbr add --session ll='ls -lhAF'
-abbr add --session cdg='cd-git-dir'
-abbr add --session cg='cd-git-dir'
-abbr add --session g='git'
-abbr add --session gs='git status'
-abbr add --session ga='git add'
-abbr add --session gan='git add -N'
-abbr add --session gap='git add -p'
-abbr add --session gr='git restore'
-abbr add --session grs='git restore --staged'
-abbr add --session grp='git restore --staged -p'
-abbr add --session gc='git commit'
-abbr add --session gcm='git commit -m'
-abbr add --session gca='git commit --amend'
-abbr add --session gcan='git commit --amend --no-edit'
-abbr add --session gd='git diff'
-abbr add --session gds='git diff --staged'
-abbr add --session gf='git fetch --all --tags --prune'
-abbr add --session gl='git log'
-abbr add --session glo='git log --all --oneline --graph'
-abbr add --session gg='git log --all --oneline --graph'
-abbr add --session gp='git pull --prune'
-abbr add --session d='docker'
-abbr add --session v='nvim'
-abbr add --session t='tmux'
-abbr add --session f='fuck'
 
 ## Save history immediately
 setopt incappendhistory
