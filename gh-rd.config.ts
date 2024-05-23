@@ -4,6 +4,7 @@ export default defineConfig({
   tools: [
     { name: "bootandy/dust" },
     { name: "BurntSushi/ripgrep" },
+    { name: "casey/just" },
     { name: "chmln/sd" },
     { name: "ismaelgv/rnr" },
     {
