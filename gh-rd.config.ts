@@ -20,6 +20,7 @@ export default defineConfig({
       ]
     },
     { name: "junegunn/fzf" },
+    { name: "neovim/neovim" },
     { name: "rossmacarthur/sheldon" },
     { name: "sharkdp/bat" },
     { name: "sharkdp/fd" },
