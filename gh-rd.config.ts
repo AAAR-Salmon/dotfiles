@@ -6,6 +6,12 @@ export default defineConfig({
     { name: "BurntSushi/ripgrep" },
     { name: "casey/just" },
     { name: "chmln/sd" },
+    {
+      name: "direnv/direnv",
+      rename: [
+        { from: "direnv*", to: "direnv" }
+      ]
+    },
     { name: "ismaelgv/rnr" },
     {
       name: "jqlang/jq",
