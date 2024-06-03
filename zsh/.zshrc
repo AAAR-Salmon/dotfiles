@@ -17,6 +17,8 @@ zstyle ':completion:*' completer _complete _approximate _prefix
 export HISTFILE="$HOME/.history"
 export HISTSIZE=1000
 export SAVEHIST=10000
+# Save history immediately
+setopt incappendhistory
 
 ## Set prompt color
 zstyle ':prompt:pure:path' color cyan
@@ -42,9 +44,7 @@ function cd-git-dir() {
 export ABBR_FORCE=1
 export ABBR_QUIET=1
 
-## Save history immediately
-setopt incappendhistory
-
 ## Plugins integration
 command -v fzf >/dev/null && eval "$(fzf --zsh)"
+export PAGER="less -S"
 command -v zoxide >/dev/null && eval "$(zoxide init zsh)"
