@@ -2,9 +2,14 @@ vim.cmd.packadd 'vim-jetpack'
 require('jetpack.packer').add {
   {'tani/vim-jetpack', opt = 1},
   {'vim-jp/vimdoc-ja'},
+-- Language Server
   {'neovim/nvim-lspconfig'},
   {'williamboman/mason.nvim'},
   {'williamboman/mason-lspconfig.nvim'},
+-- Manupilation
+  {'ervandew/supertab'},
+  {'machakann/vim-sandwich'},
+-- Filer
   {'lambdalisue/fern.vim'},
   {'lambdalisue/fern-hijack.vim'},
   {
@@ -26,6 +31,7 @@ require('jetpack.packer').add {
       })
     end,
   },
+-- Theme
   {
     'itchyny/lightline.vim',
     config = function()
@@ -34,13 +40,13 @@ require('jetpack.packer').add {
       }
     end,
   },
-  {'ervandew/supertab'},
   {
     'rebelot/kanagawa.nvim',
     config = function()
       vim.cmd.colorscheme 'kanagawa'
     end,
   },
+-- Misc
   {'vim-jp/autofmt'},
   {
     'iamcco/markdown-preview.nvim',
@@ -58,5 +64,4 @@ require('jetpack.packer').add {
     end,
   },
   {'rhysd/conflict-marker.vim'},
-  {'machakann/vim-sandwich'},
 }
