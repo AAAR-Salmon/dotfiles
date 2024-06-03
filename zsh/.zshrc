@@ -45,4 +45,6 @@ export ABBR_QUIET=1
 ## Save history immediately
 setopt incappendhistory
 
+## Plugins integration
 command -v fzf >/dev/null && eval "$(fzf --zsh)"
+command -v zoxide >/dev/null && eval "$(zoxide init zsh)"
