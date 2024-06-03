@@ -2,6 +2,9 @@ vim.cmd.packadd 'vim-jetpack'
 require('jetpack.packer').add {
   {'tani/vim-jetpack', opt = 1},
   {'vim-jp/vimdoc-ja'},
+  {'neovim/nvim-lspconfig'},
+  {'williamboman/mason.nvim'},
+  {'williamboman/mason-lspconfig.nvim'},
   {'lambdalisue/fern.vim'},
   {'lambdalisue/fern-hijack.vim'},
   {
