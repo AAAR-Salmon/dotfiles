@@ -1,3 +1,4 @@
+-- https://github.com/tani/vim-jetpack/blob/main/README.adoc#modern-packernvim-paqnvim-style-1
 vim.cmd.packadd 'vim-jetpack'
 require('jetpack.packer').add {
   { 'tani/vim-jetpack',                 opt = 1 },
@@ -6,6 +7,15 @@ require('jetpack.packer').add {
   { 'neovim/nvim-lspconfig' },
   { 'williamboman/mason.nvim' },
   { 'williamboman/mason-lspconfig.nvim' },
+  -- Completion
+  {
+    'hrsh7th/nvim-cmp',
+    config = require('plugins.cmp').config,
+  },
+  { 'hrsh7th/cmp-nvim-lsp' },
+  { 'hrsh7th/cmp-buffer' },
+  { 'hrsh7th/cmp-cmdline' },
+  { 'hrsh7th/cmp-path' },
   -- Manupilation
   { 'ervandew/supertab' },
   { 'machakann/vim-sandwich' },
