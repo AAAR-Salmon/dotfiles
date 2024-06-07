@@ -7,6 +7,19 @@ require('jetpack.packer').add {
   { 'neovim/nvim-lspconfig' },
   { 'williamboman/mason.nvim' },
   { 'williamboman/mason-lspconfig.nvim' },
+  {
+    'nvimtools/none-ls.nvim',
+    requires = 'nvim-lua/plenary.nvim',
+    config = function()
+      local null_ls = require('null-ls')
+      null_ls.setup({
+        sources = {
+          null_ls.builtins.formatting.prettier,
+        },
+      })
+    end,
+  },
+  {'jay-babu/mason-null-ls.nvim'},
   -- Completion
   {
     'hrsh7th/nvim-cmp',
