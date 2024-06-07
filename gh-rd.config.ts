@@ -7,6 +7,7 @@ export default defineConfig({
     { name: "BurntSushi/ripgrep" },
     { name: "casey/just" },
     { name: "chmln/sd" },
+    { name: "dandavison/delta" },
     {
       name: "direnv/direnv",
       rename: [
