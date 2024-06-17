@@ -41,6 +41,7 @@ function cd-git-dir() {
   cd "$(git rev-parse --show-toplevel)"
 }
 
+export ABBR_USER_ABBREVIATIONS_FILE="$DOTFILES/user-abbreviations"
 export ABBR_FORCE=1
 export ABBR_QUIET=1
 
