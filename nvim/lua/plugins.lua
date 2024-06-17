@@ -19,7 +19,7 @@ require('jetpack.packer').add {
       })
     end,
   },
-  {'jay-babu/mason-null-ls.nvim'},
+  { 'jay-babu/mason-null-ls.nvim' },
   -- Completion
   {
     'hrsh7th/nvim-cmp',
@@ -52,6 +52,21 @@ require('jetpack.packer').add {
         end,
       })
     end,
+  },
+  {
+    'romgrk/barbar.nvim',
+    setup = function()
+      vim.g.barbar_auto_setup = false
+    end,
+    config = function()
+      require('barbar').setup({
+        icons = {
+          filetype = {
+            enabled = false,
+          },
+        },
+      })
+    end
   },
   -- Theme
   {
