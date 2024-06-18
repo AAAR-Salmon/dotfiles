@@ -53,22 +53,7 @@ require('jetpack.packer').add {
       })
     end,
   },
-  {
-    'romgrk/barbar.nvim',
-    setup = function()
-      vim.g.barbar_auto_setup = false
-    end,
-    config = function()
-      require('barbar').setup({
-        icons = {
-          filetype = {
-            enabled = false,
-          },
-        },
-      })
-    end
-  },
-  -- Theme
+  -- Appearance
   {
     'itchyny/lightline.vim',
     config = function()
@@ -81,6 +66,20 @@ require('jetpack.packer').add {
     'rebelot/kanagawa.nvim',
     config = function()
       vim.cmd.colorscheme 'kanagawa'
+    end,
+  },
+  {
+    'romgrk/barbar.nvim',
+    requires = {
+      'nvim-tree/nvim-web-devicons',
+      'lewis6991/gitsigns.nvim',
+    },
+  },
+  { 'nvim-tree/nvim-web-devicons' },
+  {
+    'lewis6991/gitsigns.nvim',
+    config = function()
+      require('gitsigns').setup()
     end,
   },
   -- Misc
