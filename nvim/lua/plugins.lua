@@ -82,6 +82,8 @@ require('jetpack.packer').add {
       require('gitsigns').setup()
     end,
   },
+  { 'bronson/vim-trailing-whitespace' },
+  { 'rhysd/conflict-marker.vim' },
   -- Misc
   { 'vim-jp/autofmt' },
   {
@@ -92,13 +94,14 @@ require('jetpack.packer').add {
     end,
     ft = { 'markdown' },
   },
-  { 'bronson/vim-trailing-whitespace' },
+  { 'nmac427/guess-indent.nvim' },
   {
-    'nmac427/guess-indent.nvim',
+    'anuvyklack/help-vsplit.nvim',
     config = function()
-      require('guess-indent').setup {}
+      require('help-vsplit').setup({
+        always = true,
+        side = 'right',
+      })
     end,
   },
-  { 'rhysd/conflict-marker.vim' },
-  { 'anuvyklack/help-vsplit.nvim' },
 }
