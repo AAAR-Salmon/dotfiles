@@ -72,15 +72,13 @@ require('jetpack.packer').add {
     'romgrk/barbar.nvim',
     requires = {
       'nvim-tree/nvim-web-devicons',
-      'lewis6991/gitsigns.nvim',
+      {
+        'lewis6991/gitsigns.nvim',
+        config = function()
+          require('gitsigns').setup()
+        end,
+      },
     },
-  },
-  { 'nvim-tree/nvim-web-devicons' },
-  {
-    'lewis6991/gitsigns.nvim',
-    config = function()
-      require('gitsigns').setup()
-    end,
   },
   { 'bronson/vim-trailing-whitespace' },
   { 'rhysd/conflict-marker.vim' },
