@@ -92,7 +92,18 @@ require('jetpack.packer').add {
     end,
     ft = { 'markdown' },
   },
-  { 'nmac427/guess-indent.nvim' },
+  {
+    'nmac427/guess-indent.nvim',
+    setup = function()
+      vim.opt.tabstop = 2
+      vim.opt.softtabstop = 2
+      vim.opt.shiftwidth = 2
+      vim.opt.expandtab = true
+    end,
+    config = function()
+      require('guess-indent').setup()
+    end,
+  },
   {
     'anuvyklack/help-vsplit.nvim',
     config = function()
