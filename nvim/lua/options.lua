@@ -12,6 +12,12 @@ opt.hlsearch = true
 opt.autoindent = true
 opt.smartindent = true
 
+opt.list = true
+opt.listchars = {
+  tab = '▸ ',
+  space = '·',
+}
+
 opt.ruler = true
 opt.textwidth = 79
 opt.colorcolumn = '+1'
