@@ -24,6 +24,8 @@ opt.colorcolumn = '+1'
 
 opt.clipboard = 'unnamedplus'
 
+opt.encoding = 'utf-8'
+opt.fileencodings = { 'utf-8', 'sjis' }
 
 opt.helplang = 'ja', 'en'
 
