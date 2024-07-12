@@ -24,7 +24,6 @@ opt.colorcolumn = '+1'
 
 opt.clipboard = 'unnamedplus'
 
-opt.filetype = 'on', 'indent', 'plugin'
 
 opt.helplang = 'ja', 'en'
 
