@@ -53,6 +53,15 @@ require('jetpack.packer').add {
       })
     end,
   },
+  {
+    'lambdalisue/vim-fern-renderer-nerdfont',
+    config = function()
+      vim.g['fern#renderer'] = 'nerdfont'
+    end,
+    requires = {
+      'lambdalisue/nerdfont.vim',
+    },
+  },
   -- Appearance
   {
     'itchyny/lightline.vim',
