@@ -62,6 +62,7 @@ require('jetpack.packer').add {
       'lambdalisue/nerdfont.vim',
     },
   },
+  { 'lambdalisue/vim-fern-git-status' },
   -- Appearance
   {
     'itchyny/lightline.vim',
