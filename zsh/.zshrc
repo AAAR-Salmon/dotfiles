@@ -27,7 +27,7 @@ zstyle ':prompt:pure:prompt:error' color red
 zstyle ':prompt:pure:git:stash' show true
 
 ## Alias
-alias rm='trash-put'
+alias rm='gomi'
 alias mv='mv -i'
 alias cp='cp -i'
 alias ls='ls --color=auto'

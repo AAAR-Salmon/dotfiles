@@ -3,6 +3,7 @@ import { defineConfig } from "https://deno.land/x/gh_rd/mod.ts";
 export default defineConfig({
   tools: [
     { name: "ajeetdsouza/zoxide" },
+    { name: "babarot/gomi" },
     { name: "bootandy/dust" },
     { name: "BurntSushi/ripgrep" },
     { name: "casey/just" },
