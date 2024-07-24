@@ -1,4 +1,4 @@
-.zcompdump
+.zcompdump*
 
 # Host dependent configuration
 .zshenv
