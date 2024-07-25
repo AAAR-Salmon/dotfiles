@@ -30,5 +30,17 @@ export ABBR_FORCE=1
 export ABBR_QUIET=1
 """
 
+[plugins.zeno]
+github = 'yuki-yano/zeno.zsh'
+hooks.pre = """
+export ZENO_HOME=$DOTFILES/zeno
+"""
+hooks.post = """
+if [[ -n $ZENO_LOADED ]]; then
+  bindkey '^i' zeno-completion
+  export ZENO_COMPLETION_FALLBACK=expand-or-complete
+fi
+"""
+
 [plugins.pure-theme]
 github = 'sindresorhus/pure'
