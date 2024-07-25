@@ -27,7 +27,8 @@ use = ['zsh-abbr.plugin.zsh']
 hooks.pre = """
 export ABBR_USER_ABBREVIATIONS_FILE="$DOTFILES/user-abbreviations"
 export ABBR_FORCE=1
-export ABBR_QUIET=1"""
+export ABBR_QUIET=1
+"""
 
 [plugins.pure-theme]
 github = 'sindresorhus/pure'
