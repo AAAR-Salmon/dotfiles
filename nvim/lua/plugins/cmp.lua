@@ -11,6 +11,10 @@ return {
         ['<C-Space>'] = cmp.mapping.complete(),
         ['<CR>'] = cmp.mapping.confirm({ select = true }),
       }),
+      window = {
+        completion = cmp.config.window.bordered(),
+        documentation = cmp.config.window.bordered(),
+      },
       sources = cmp.config.sources({
         { name = 'nvim_lsp' },
       }, {
