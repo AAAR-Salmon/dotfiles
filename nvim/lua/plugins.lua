@@ -50,6 +50,7 @@ require('jetpack.packer').add {
   },
   { 'ervandew/supertab' },
   { 'machakann/vim-sandwich' },
+  { 'folke/which-key.nvim' },
   -- Filer
   { 'lambdalisue/fern.vim' },
   { 'lambdalisue/fern-hijack.vim' },
