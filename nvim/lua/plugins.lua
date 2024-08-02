@@ -39,13 +39,17 @@ require('jetpack.packer').add {
     'nvim-telescope/telescope.nvim',
     requires = {
       'nvim-lua/plenary.nvim',
+      'folke/which-key.nvim',
     },
     config = function()
+      local wk = require('which-key')
       local builtin = require('telescope.builtin')
-      vim.keymap.set('n', '<leader>ff', builtin.find_files, {})
-      vim.keymap.set('n', '<leader>fg', builtin.live_grep, {})
-      vim.keymap.set('n', '<leader>fb', builtin.buffers, {})
-      vim.keymap.set('n', '<leader>fh', builtin.help_tags, {})
+      wk.add({
+        { '<leader>ff', builtin.find_files, mode = 'n', desc = 'telescope find_files' },
+        { '<leader>fg', builtin.live_grep,  mode = 'n', desc = 'telescope live_grep' },
+        { '<leader>fb', builtin.buffers,    mode = 'n', desc = 'telescope buffers' },
+        { '<leader>fh', builtin.help_tags,  mode = 'n', desc = 'telescope help_tags' },
+      })
     end,
   },
   { 'ervandew/supertab' },
