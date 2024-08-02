@@ -52,6 +52,34 @@ require('jetpack.packer').add {
       })
     end,
   },
+  {
+    'kazhala/close-buffers.nvim',
+    requires = {
+      'folke/which-key.nvim',
+    },
+    config = function()
+      local close_buffers = require('close_buffers')
+      local wk = require('which-key')
+      wk.add({
+        {
+          '<leader>ba',
+          function()
+            close_buffers.wipe({ type = 'all' })
+          end,
+          mode = 'n',
+          desc = 'close-buffers wipe all'
+        },
+        {
+          '<leader>bo',
+          function()
+            close_buffers.wipe({ type = 'other' })
+          end,
+          mode = 'n',
+          desc = 'close-buffers wipe other'
+        },
+      })
+    end,
+  },
   { 'ervandew/supertab' },
   { 'machakann/vim-sandwich' },
   { 'folke/which-key.nvim' },
