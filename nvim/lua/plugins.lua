@@ -45,10 +45,33 @@ require('jetpack.packer').add {
       local wk = require('which-key')
       local builtin = require('telescope.builtin')
       wk.add({
-        { '<leader>ff', builtin.find_files, mode = 'n', desc = 'telescope find_files' },
-        { '<leader>fg', builtin.live_grep,  mode = 'n', desc = 'telescope live_grep' },
-        { '<leader>fb', builtin.buffers,    mode = 'n', desc = 'telescope buffers' },
-        { '<leader>fh', builtin.help_tags,  mode = 'n', desc = 'telescope help_tags' },
+        { '<leader>fg', builtin.live_grep, mode = 'n', desc = 'telescope live_grep' },
+        { '<leader>fb', builtin.buffers,   mode = 'n', desc = 'telescope buffers' },
+        { '<leader>fh', builtin.help_tags, mode = 'n', desc = 'telescope help_tags' },
+      })
+    end,
+  },
+  {
+    'nvim-telescope/telescope-frecency.nvim',
+    requires = {
+      'nvim-telescope/telescope.nvim',
+      'folke/which-key.nvim',
+    },
+    config = function()
+      local wk = require('which-key')
+      local telescope = require('telescope')
+      telescope.load_extension('frecency')
+      wk.add({
+        {
+          '<leader>ff',
+          function()
+            telescope.extensions.frecency.frecency({
+              workspace = "CWD",
+            })
+          end,
+          mode = 'n',
+          desc = 'telescope find_files',
+        },
       })
     end,
   },
