@@ -76,6 +76,27 @@ require('jetpack.packer').add {
     end,
   },
   {
+    'smoka7/hop.nvim',
+    requires = {
+      'folke/which-key.nvim',
+    },
+    config = function()
+      local wk = require('which-key')
+      local hop = require('hop')
+      hop.setup({})
+      wk.add({
+        {
+          '<leader>h',
+          function()
+            hop.hint_char1({})
+          end,
+          mode = { 'n', 'v', 'o' },
+          desc = 'hop char1',
+        },
+      })
+    end
+  },
+  {
     'kazhala/close-buffers.nvim',
     requires = {
       'folke/which-key.nvim',
