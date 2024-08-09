@@ -22,6 +22,8 @@ opt.ruler = true
 opt.textwidth = 79
 opt.colorcolumn = '+1'
 
+opt.scrolloff = 99
+
 opt.clipboard = 'unnamedplus'
 
 opt.encoding = 'utf-8'
