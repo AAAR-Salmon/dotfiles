@@ -185,6 +185,18 @@ require('jetpack.packer').add {
       },
     },
   },
+  {
+    'shellRaining/hlchunk.nvim',
+    -- event = { 'BufReadPre', 'BufNewFile' },
+    config = function ()
+      require('hlchunk').setup({
+        chunk = {
+          enable = true,
+          delay = 0,
+        },
+      })
+    end,
+  },
   { 'bronson/vim-trailing-whitespace' },
   { 'rhysd/conflict-marker.vim' },
   -- Misc
