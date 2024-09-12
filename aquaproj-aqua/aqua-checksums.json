@@ -1,0 +1,84 @@
+{
+  "checksums": [
+    {
+      "id": "github_release/github.com/BurntSushi/ripgrep/14.1.1/ripgrep-14.1.1-x86_64-unknown-linux-musl.tar.gz",
+      "checksum": "4CF9F2741E6C465FFDB7C26F38056A59E2A2544B51F7CC128EF28337EEAE4D8E",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/ajeetdsouza/zoxide/v0.9.4/zoxide-0.9.4-x86_64-unknown-linux-musl.tar.gz",
+      "checksum": "FBC22C115A252F9A5C73301E35ED695810D020126B126C3D0E47F0B31F2255A0",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/babarot/gomi/v1.1.6/gomi_linux_x86_64.tar.gz",
+      "checksum": "3B05A1E4BC0C047A6B8083FF7C65FE7EF52DBBF8DFCEC1039A3358CC693A908A",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/bootandy/dust/v1.1.1/dust-v1.1.1-x86_64-unknown-linux-musl.tar.gz",
+      "checksum": "4D0E7F3E39CE85E98CC69260AB6F40E460A455CD8575AF1BA70D14A2940AE553",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/casey/just/1.35.0/just-1.35.0-x86_64-unknown-linux-musl.tar.gz",
+      "checksum": "C4172306E241BD175C07316156A610593FA2B687AC49418520A375605D7CEAD4",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/chmln/sd/v1.0.0/sd-v1.0.0-x86_64-unknown-linux-musl.tar.gz",
+      "checksum": "9F42E4FEC7848FA8D6EEAB7B1090F5C9C9E374C94A9974DB6FF33DF052C9E132",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/dandavison/delta/0.18.1/delta-0.18.1-x86_64-unknown-linux-musl.tar.gz",
+      "checksum": "2F39630CB1AE1D40414D33E8C4E90344045A20A4E42981A464ED5A48726A4820",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/direnv/direnv/v2.34.0/direnv.linux-amd64",
+      "checksum": "F7F2C814C2EAE48641E4BDE9BF11F463E309C8F7E3737F96C78588150E1DCE25",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/ismaelgv/rnr/v0.4.2/rnr-v0.4.2-x86_64-unknown-linux-musl.tar.gz",
+      "checksum": "4CDC78224F78B77F22FCAF8756147A72EBA8D73DEC4CB8932B973BB1D4F7070F",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/junegunn/fzf/v0.55.0/fzf-0.55.0-linux_amd64.tar.gz",
+      "checksum": "4DF2393776942780DDAB2CEA713DDAAC06CD5C3886CD23BC9119A6D3AA1E02BD",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/neovim/neovim/v0.10.1/nvim-linux64.tar.gz",
+      "checksum": "4867DE01A17F6083F902F8AA5215B40B0ED3A36E83CC0293DE3F11708F1F9793",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/rossmacarthur/sheldon/0.8.0/sheldon-0.8.0-x86_64-unknown-linux-musl.tar.gz",
+      "checksum": "A1035B09640BB3F7F4FFCCA32E2C3875448A842517D8B6FCDCA7FC4513FC39FD",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/sharkdp/bat/v0.24.0/bat-v0.24.0-x86_64-unknown-linux-musl.tar.gz",
+      "checksum": "D39A21E3DA57FE6A3E07184B3C1DC245F8DBA379AF569D3668B6DCDFE75E3052",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/sharkdp/fd/v10.2.0/fd-v10.2.0-x86_64-unknown-linux-musl.tar.gz",
+      "checksum": "D9BFA25EC28624545C222992E1B00673B7C9CA5EB15393C40369F10B28F9C932",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/upx/upx/v4.2.4/upx-4.2.4-amd64_linux.tar.xz",
+      "checksum": "75CAB4E57AB72FB4585EE45FF36388D280C7AFD72AA03E8D4B9C3CBDDB474193",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "registries/github_content/github.com/aquaproj/aqua-registry/v4.220.1/registry.yaml",
+      "checksum": "E52926392614425EFC6D74D06B885F918A401FC2E44500FFD0A0D19758BCCE0EFBC0A4F7760058ACD1007B69D2239C9834A4151CCC963DE2E65D6D267A0E0906",
+      "algorithm": "sha512"
+    }
+  ]
+}

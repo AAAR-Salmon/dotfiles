@@ -6,7 +6,7 @@ includes configs of:
 * [zsh](https://www.zsh.org/)
   * [sheldon](https://sheldon.cli.rs/)
 * [tmux](https://github.com/tmux/tmux/wiki)
-* [gh-rd](https://github.com/Ryooooooga/gh-rd) (GitHub Releases Downloader)
+* [aqua](https://aquaproj.github.io/)
 
 ## Installation
 

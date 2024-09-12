@@ -41,7 +41,20 @@ function cd-git-dir() {
   cd "$(git rev-parse --show-toplevel)"
 }
 
-## Plugins integration
-command -v fzf >/dev/null && eval "$(fzf --zsh)"
 export PAGER="less -S"
+
+## Plugins integration
+# aqua
+export AQUA_ROOT_DIR="$HOME/.local/share/aquaproj-aqua"
+export AQUA_GLOBAL_CONFIG="$DOTFILES/aquaproj-aqua/aqua.yaml"
+export PATH="$PATH:$AQUA_ROOT_DIR/bin"
+source <($AQUA_ROOT_DIR/bin/aqua completion zsh)
+
+# direnv
+eval "$(direnv hook zsh)"
+
+# fzf
+command -v fzf >/dev/null && eval "$(fzf --zsh)"
+
+# zoxide
 command -v zoxide >/dev/null && eval "$(zoxide init zsh)"
