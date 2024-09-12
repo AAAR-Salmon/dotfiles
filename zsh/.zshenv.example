@@ -3,4 +3,9 @@ export DOTFILES="$HOME/your/dotfiles/path"
 export ZDOTDIR="$DOTFILES/zsh"
 
 export PATH="$PATH:$HOME/.local/bin"
+export FPATH="$HOME/.local/share/zfunc:$FPATH"
 
+export EDITOR="nvim"
+export PAGER="less -S"
+
+source "$ZDOTDIR/.zshenv.local"

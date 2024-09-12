@@ -2,3 +2,4 @@
 
 # Host dependent configuration
 .zshenv
+*.local
