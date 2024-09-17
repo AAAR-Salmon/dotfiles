@@ -186,6 +186,17 @@ require('jetpack.packer').add {
     },
   },
   {
+    'folke/trouble.nvim',
+    config = function()
+      local wk = require('which-key')
+      require('trouble').setup({
+        wk.add({
+          { '<leader>tb', '<cmd>Trouble diagnostics toggle filter.buf=0<cr>', mode = 'n', desc = 'Trouble Buffer Diagnostics' },
+        })
+      })
+    end
+  },
+  {
     'shellRaining/hlchunk.nvim',
     -- event = { 'BufReadPre', 'BufNewFile' },
     config = function ()
