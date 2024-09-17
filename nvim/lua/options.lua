@@ -29,7 +29,7 @@ opt.clipboard = 'unnamedplus'
 opt.encoding = 'utf-8'
 opt.fileencodings = { 'utf-8', 'sjis' }
 
-opt.helplang = 'ja', 'en'
+opt.helplang = { 'ja', 'en' }
 
 vim.cmd('set formatexpr=autofmt#japanese#formatexpr()')
 
