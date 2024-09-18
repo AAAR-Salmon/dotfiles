@@ -46,6 +46,11 @@
       "algorithm": "sha256"
     },
     {
+      "id": "github_release/github.com/jqlang/jq/jq-1.7.1/jq-linux-amd64",
+      "checksum": "5942C9B0934E510EE61EB3E30273F1B3FE2590DF93933A93D7C58B81D19C8FF5",
+      "algorithm": "sha256"
+    },
+    {
       "id": "github_release/github.com/junegunn/fzf/v0.55.0/fzf-0.55.0-linux_amd64.tar.gz",
       "checksum": "4DF2393776942780DDAB2CEA713DDAAC06CD5C3886CD23BC9119A6D3AA1E02BD",
       "algorithm": "sha256"
