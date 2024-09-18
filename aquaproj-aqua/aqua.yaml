@@ -14,7 +14,7 @@ packages:
 - name: BurntSushi/ripgrep@14.1.1
 - name: babarot/gomi@v1.1.6
 - name: sharkdp/fd@v10.2.0
-- name: ajeetdsouza/zoxide@v0.9.4
+- name: ajeetdsouza/zoxide@v0.9.5
 - name: bootandy/dust@v1.1.1
 - name: casey/just@1.35.0
 - name: chmln/sd@v1.0.0

@@ -11,6 +11,11 @@
       "algorithm": "sha256"
     },
     {
+      "id": "github_release/github.com/ajeetdsouza/zoxide/v0.9.5/zoxide-0.9.5-x86_64-unknown-linux-musl.tar.gz",
+      "checksum": "0C429709417AE0B6F655AF12692E108145E7AEA9659A5B148B29EF1EFF91AFD2",
+      "algorithm": "sha256"
+    },
+    {
       "id": "github_release/github.com/babarot/gomi/v1.1.6/gomi_linux_x86_64.tar.gz",
       "checksum": "3B05A1E4BC0C047A6B8083FF7C65FE7EF52DBBF8DFCEC1039A3358CC693A908A",
       "algorithm": "sha256"
