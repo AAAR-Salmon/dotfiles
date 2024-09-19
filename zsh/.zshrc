@@ -5,12 +5,6 @@ bindkey -e
 # Load plugins
 eval "$(sheldon source)"
 
-# Configure completion
-autoload -Uz compinit && compinit
-zstyle ':completion:*' matcher 'm:{a-z}={A-Z}'
-## https://qiita.com/minnsou/items/3e9f200f9f2cc9a92920
-zstyle ':completion:*' completer _complete _approximate _prefix
-
 # Config command history
 export HISTFILE="$HOME/.history"
 export HISTSIZE=1000
@@ -57,3 +51,9 @@ fi
 
 # load local overrides
 source "$ZDOTDIR/.zshrc.local"
+
+# Configure completion
+autoload -Uz compinit && compinit
+zstyle ':completion:*' matcher 'm:{a-z}={A-Z}'
+## https://qiita.com/minnsou/items/3e9f200f9f2cc9a92920
+zstyle ':completion:*' completer _complete _approximate _prefix
