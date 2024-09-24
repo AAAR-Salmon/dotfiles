@@ -1,1 +1,11 @@
 # See https://github.com/yuki-yano/zeno.zsh/blob/main/README.md#user-configuration-file
+completions:
+  - name: npm script
+    patterns:
+      - '^(npm|pnpm|yarn) run $'
+    sourceCommand:
+      $DOTFILES/zeno/scripts/bin/npm_scripts_completion_source
+    options:
+      --prompt: "'Run Script> '"
+    callback:
+      awk -F ' {2,}' '{print $1}'

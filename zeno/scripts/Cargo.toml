@@ -1,0 +1,5 @@
+[workspace]
+members = [
+    "npm_scripts_completion_source",
+]
+resolver = "2"
