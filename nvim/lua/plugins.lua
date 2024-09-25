@@ -197,6 +197,16 @@ require('jetpack.packer').add {
     end
   },
   {
+    'folke/noice.nvim',
+    requires = {
+      'MunifTanjim/nui.nvim',
+      'rcarriga/nvim-notify',
+    },
+    config = function ()
+      require('noice').setup()
+    end
+  },
+  {
     'shellRaining/hlchunk.nvim',
     -- event = { 'BufReadPre', 'BufNewFile' },
     config = function ()
