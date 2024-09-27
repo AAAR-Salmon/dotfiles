@@ -208,6 +208,9 @@ require('jetpack.packer').add {
   },
   {
     'shellRaining/hlchunk.nvim',
+    requires = {
+      'nvim-treesitter/nvim-treesitter',
+    },
     -- event = { 'BufReadPre', 'BufNewFile' },
     config = function ()
       require('hlchunk').setup({
