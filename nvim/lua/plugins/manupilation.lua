@@ -1,7 +1,7 @@
 return {
   {
     'nvim-telescope/telescope.nvim',
-    requires = {
+    dependencies = {
       'nvim-lua/plenary.nvim',
       'folke/which-key.nvim',
     },
@@ -17,7 +17,7 @@ return {
   },
   {
     'nvim-telescope/telescope-frecency.nvim',
-    requires = {
+    dependencies = {
       'nvim-telescope/telescope.nvim',
       'folke/which-key.nvim',
     },
@@ -41,7 +41,7 @@ return {
   },
   {
     'smoka7/hop.nvim',
-    requires = {
+    dependencies = {
       'folke/which-key.nvim',
     },
     config = function()
@@ -62,7 +62,7 @@ return {
   },
   {
     'kazhala/close-buffers.nvim',
-    requires = {
+    dependencies = {
       'folke/which-key.nvim',
     },
     config = function()

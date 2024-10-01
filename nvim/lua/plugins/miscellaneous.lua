@@ -10,13 +10,11 @@ return {
   },
   {
     'nmac427/guess-indent.nvim',
-    setup = function()
+    config = function()
       vim.opt.tabstop = 2
       vim.opt.softtabstop = 2
       vim.opt.shiftwidth = 2
       vim.opt.expandtab = true
-    end,
-    config = function()
       require('guess-indent').setup()
     end,
   },

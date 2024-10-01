@@ -15,7 +15,7 @@ return {
   },
   {
     'romgrk/barbar.nvim',
-    requires = {
+    dependencies = {
       'nvim-tree/nvim-web-devicons',
       {
         'lewis6991/gitsigns.nvim',
@@ -38,7 +38,7 @@ return {
   },
   {
     'folke/noice.nvim',
-    requires = {
+    dependencies = {
       'MunifTanjim/nui.nvim',
       'rcarriga/nvim-notify',
     },
@@ -48,7 +48,7 @@ return {
   },
   {
     'shellRaining/hlchunk.nvim',
-    requires = {
+    dependencies = {
       'nvim-treesitter/nvim-treesitter',
     },
     -- event = { 'BufReadPre', 'BufNewFile' },
