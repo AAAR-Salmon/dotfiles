@@ -3,6 +3,9 @@ return {
   { 'lambdalisue/fern-hijack.vim' },
   {
     'yuki-yano/fern-preview.vim',
+    dependencies = {
+      'lambdalisue/fern.vim',
+    },
     config = function()
       vim.api.nvim_create_autocmd('FileType', {
         pattern = 'fern',
@@ -26,6 +29,7 @@ return {
     end,
     dependencies = {
       'lambdalisue/nerdfont.vim',
+      'lambdalisue/fern.vim',
     },
   },
   { 'lambdalisue/vim-fern-git-status' },
