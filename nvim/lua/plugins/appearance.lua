@@ -61,6 +61,10 @@ return {
       })
     end,
   },
-  { 'bronson/vim-trailing-whitespace' },
-  { 'rhysd/conflict-marker.vim' },
+  {
+    'bronson/vim-trailing-whitespace',
+  },
+  {
+    'rhysd/conflict-marker.vim',
+  },
 }

@@ -1,5 +1,7 @@
 return {
-  { 'vim-jp/autofmt' },
+  {
+    'vim-jp/autofmt',
+  },
   {
     'iamcco/markdown-preview.nvim',
     run = 'cd app && yarn install',

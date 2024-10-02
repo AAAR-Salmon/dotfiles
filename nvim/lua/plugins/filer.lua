@@ -1,6 +1,10 @@
 return {
-  { 'lambdalisue/fern.vim' },
-  { 'lambdalisue/fern-hijack.vim' },
+  {
+    'lambdalisue/fern.vim',
+  },
+  {
+    'lambdalisue/fern-hijack.vim',
+  },
   {
     'yuki-yano/fern-preview.vim',
     dependencies = {
@@ -32,5 +36,7 @@ return {
       'lambdalisue/fern.vim',
     },
   },
-  { 'lambdalisue/vim-fern-git-status' },
+  {
+    'lambdalisue/vim-fern-git-status',
+  },
 }

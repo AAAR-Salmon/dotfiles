@@ -1,12 +1,12 @@
 return {
   {
-    'neovim/nvim-lspconfig'
+    'neovim/nvim-lspconfig',
   },
   {
-    'williamboman/mason.nvim'
+    'williamboman/mason.nvim',
   },
   {
-    'williamboman/mason-lspconfig.nvim'
+    'williamboman/mason-lspconfig.nvim',
   },
   {
     'nvimtools/none-ls.nvim',
@@ -26,6 +26,6 @@ return {
     end,
   },
   {
-    'jay-babu/mason-null-ls.nvim'
+    'jay-babu/mason-null-ls.nvim',
   },
 }

@@ -88,7 +88,13 @@ return {
       })
     end,
   },
-  { 'ervandew/supertab' },
-  { 'machakann/vim-sandwich' },
-  { 'folke/which-key.nvim' },
+  {
+    'ervandew/supertab',
+  },
+  {
+    'machakann/vim-sandwich',
+  },
+  {
+    'folke/which-key.nvim',
+  },
 }
