@@ -3,6 +3,7 @@ local wk = require('which-key')
 vim.g.mapleader = ','
 wk.add({
   { 'jk', '<esc>', mode = 'i' },
+  { 'Jk', '<esc>', mode = 'i' },
   { 'q',  '<esc>', mode = 'v' },
   {
     'g=',
