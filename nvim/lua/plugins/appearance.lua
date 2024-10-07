@@ -41,6 +41,8 @@ return {
     dependencies = {
       'MunifTanjim/nui.nvim',
       'rcarriga/nvim-notify',
+      -- https://github.com/folke/noice.nvim/issues/938
+      'stevearc/dressing.nvim',
     },
     config = function ()
       require('noice').setup()
