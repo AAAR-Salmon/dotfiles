@@ -9,6 +9,31 @@ require('mason-lspconfig').setup_handlers {
   end,
 }
 
+require('lspconfig').rust_analyzer.setup({
+  capabilities = require('cmp_nvim_lsp').default_capabilities(),
+  settings = {
+    ["rust-analyzer"] = {
+      check = {
+        command = "clippy",
+      },
+      imports = {
+        granularity = {
+          group = "module",
+        },
+        prefix = "self",
+      },
+      cargo = {
+        buildScripts = {
+          enable = true,
+        },
+      },
+      procMacro = {
+        enable = true,
+      },
+    },
+  },
+})
+
 vim.diagnostic.config({
   virtual_text = false,
   signs = true,
