@@ -36,6 +36,10 @@ if command -v direnv >/dev/null 2>&1; then
   eval "$(direnv hook zsh)"
 fi
 
+## Deno
+export DENO_INSTALL_ROOT="$HOME/.local/share/deno/bin"
+export PATH="$DENO_INSTALL_ROOT:$PATH"
+
 ## fzf
 if command -v fzf >/dev/null 2>&1; then
   eval "$(fzf --zsh)"

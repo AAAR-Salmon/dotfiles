@@ -27,3 +27,4 @@ packages:
 - name: rossmacarthur/sheldon@0.8.0
 - name: sharkdp/bat@v0.24.0
 - name: upx/upx@v4.2.4
+- name: denoland/deno@v1.46.3

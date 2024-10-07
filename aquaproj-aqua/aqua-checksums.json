@@ -46,6 +46,11 @@
       "algorithm": "sha256"
     },
     {
+      "id": "github_release/github.com/denoland/deno/v1.46.3/deno-x86_64-unknown-linux-gnu.zip",
+      "checksum": "39BB1D21AD19C16FCB14F9D58FB542C2BCCF0CD92C19AEE8127AC5112B48BF83",
+      "algorithm": "sha256"
+    },
+    {
       "id": "github_release/github.com/direnv/direnv/v2.34.0/direnv.linux-amd64",
       "checksum": "F7F2C814C2EAE48641E4BDE9BF11F463E309C8F7E3737F96C78588150E1DCE25",
       "algorithm": "sha256"
