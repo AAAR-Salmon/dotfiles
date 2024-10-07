@@ -38,4 +38,12 @@ wk.add({
     mode = 'n',
     desc = 'Jump to references by Language Server',
   },
+  {
+    'gq',
+    function()
+      vim.lsp.buf.code_action()
+    end,
+    mode = 'n',
+    desc = 'Action (quickfix) by Language Server',
+  },
 })
