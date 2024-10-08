@@ -28,3 +28,4 @@ packages:
 - name: sharkdp/bat@v0.24.0
 - name: upx/upx@v4.2.4
 - name: denoland/deno@v1.46.3
+- name: ClementTsang/bottom@0.10.2

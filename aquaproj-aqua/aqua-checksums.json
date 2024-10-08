@@ -6,6 +6,11 @@
       "algorithm": "sha256"
     },
     {
+      "id": "github_release/github.com/ClementTsang/bottom/0.10.2/bottom_x86_64-unknown-linux-musl.tar.gz",
+      "checksum": "520C9E3F1C2E9F076693B59277B680806670AF8FB5BEA2A9FEECC6176DC6A151",
+      "algorithm": "sha256"
+    },
+    {
       "id": "github_release/github.com/ajeetdsouza/zoxide/v0.9.4/zoxide-0.9.4-x86_64-unknown-linux-musl.tar.gz",
       "checksum": "FBC22C115A252F9A5C73301E35ED695810D020126B126C3D0E47F0B31F2255A0",
       "algorithm": "sha256"
