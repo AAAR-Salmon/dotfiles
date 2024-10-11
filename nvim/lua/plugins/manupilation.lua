@@ -89,6 +89,13 @@ return {
     end,
   },
   {
+    'FabijanZulj/blame.nvim',
+    cmd = { 'BlameToggle' },
+    opts = {
+      date_format = "%Y%m%d",
+    },
+  },
+  {
     'ervandew/supertab',
   },
   {
