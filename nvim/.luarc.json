@@ -1,0 +1,21 @@
+{
+  "$schema": "https://raw.githubusercontent.com/sumneko/vscode-lua/master/setting/schema.json",
+  "diagnostics.globals": [
+    "vim"
+  ],
+  "format": {
+    "enable": true,
+    "defaultConfig": {
+      "$see": "https://github.com/CppCXY/EmmyLuaCodeStyle/blob/master/docs/format_config.md",
+      "quote_style": "single",
+      "continuation_indent": "2",
+      "max_line_length": "120",
+      "table_separator_style": "comma",
+      "call_arg_parentheses": "keep",
+      "trailing_table_separator": "smart",
+      "space_around_table_field_list": "true",
+      "space_before_closure_open_parenthesis": "true",
+      "space_after_comment_dash": "true"
+    }
+  }
+}

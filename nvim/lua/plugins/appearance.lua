@@ -1,7 +1,7 @@
 return {
   {
     'itchyny/lightline.vim',
-    config = function()
+    config = function ()
       vim.g.lightline = {
         colorscheme = 'jellybeans',
       }
@@ -9,7 +9,7 @@ return {
   },
   {
     'rebelot/kanagawa.nvim',
-    config = function()
+    config = function ()
       vim.cmd.colorscheme 'kanagawa'
     end,
   },
@@ -19,7 +19,7 @@ return {
       'nvim-tree/nvim-web-devicons',
       {
         'lewis6991/gitsigns.nvim',
-        config = function()
+        config = function ()
           require('gitsigns').setup()
         end,
       },
@@ -27,14 +27,14 @@ return {
   },
   {
     'folke/trouble.nvim',
-    config = function()
+    config = function ()
       local wk = require('which-key')
       require('trouble').setup({
         wk.add({
           { '<leader>tb', '<cmd>Trouble diagnostics toggle filter.buf=0<cr>', mode = 'n', desc = 'Trouble Buffer Diagnostics' },
-        })
+        }),
       })
-    end
+    end,
   },
   {
     'folke/noice.nvim',
@@ -46,7 +46,7 @@ return {
     },
     config = function ()
       require('noice').setup()
-    end
+    end,
   },
   {
     'shellRaining/hlchunk.nvim',

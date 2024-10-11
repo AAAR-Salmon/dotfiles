@@ -5,7 +5,7 @@ return {
       'nvim-lua/plenary.nvim',
       'folke/which-key.nvim',
     },
-    config = function()
+    config = function ()
       local wk = require('which-key')
       local builtin = require('telescope.builtin')
       wk.add({
@@ -21,16 +21,16 @@ return {
       'nvim-telescope/telescope.nvim',
       'folke/which-key.nvim',
     },
-    config = function()
+    config = function ()
       local wk = require('which-key')
       local telescope = require('telescope')
       telescope.load_extension('frecency')
       wk.add({
         {
           '<leader>ff',
-          function()
+          function ()
             telescope.extensions.frecency.frecency({
-              workspace = "CWD",
+              workspace = 'CWD',
             })
           end,
           mode = 'n',
@@ -44,46 +44,46 @@ return {
     dependencies = {
       'folke/which-key.nvim',
     },
-    config = function()
+    config = function ()
       local wk = require('which-key')
       local hop = require('hop')
       hop.setup({})
       wk.add({
         {
           '<leader>h',
-          function()
+          function ()
             hop.hint_char1({})
           end,
           mode = { 'n', 'v', 'o' },
           desc = 'hop char1',
         },
       })
-    end
+    end,
   },
   {
     'kazhala/close-buffers.nvim',
     dependencies = {
       'folke/which-key.nvim',
     },
-    config = function()
+    config = function ()
       local close_buffers = require('close_buffers')
       local wk = require('which-key')
       wk.add({
         {
           '<leader>ba',
-          function()
+          function ()
             close_buffers.wipe({ type = 'all' })
           end,
           mode = 'n',
-          desc = 'close-buffers wipe all'
+          desc = 'close-buffers wipe all',
         },
         {
           '<leader>bo',
-          function()
+          function ()
             close_buffers.wipe({ type = 'other' })
           end,
           mode = 'n',
-          desc = 'close-buffers wipe other'
+          desc = 'close-buffers wipe other',
         },
       })
     end,

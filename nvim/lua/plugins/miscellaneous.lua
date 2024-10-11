@@ -5,14 +5,14 @@ return {
   {
     'iamcco/markdown-preview.nvim',
     run = 'cd app && yarn install',
-    setup = function()
+    setup = function ()
       vim.g.mkdp_filetypes = { 'markdown' }
     end,
     ft = { 'markdown' },
   },
   {
     'nmac427/guess-indent.nvim',
-    config = function()
+    config = function ()
       vim.opt.tabstop = 2
       vim.opt.softtabstop = 2
       vim.opt.shiftwidth = 2
@@ -22,7 +22,7 @@ return {
   },
   {
     'anuvyklack/help-vsplit.nvim',
-    config = function()
+    config = function ()
       require('help-vsplit').setup({
         always = true,
         side = 'right',

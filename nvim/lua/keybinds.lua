@@ -7,7 +7,7 @@ wk.add({
   { 'q',  '<esc>', mode = 'v' },
   {
     'g=',
-    function()
+    function ()
       vim.lsp.buf.format()
     end,
     mode = 'n',
@@ -16,7 +16,7 @@ wk.add({
   { 'G=', 'g=', mode = 'n', remap = true },
   {
     'gd',
-    function()
+    function ()
       vim.lsp.buf.definition()
     end,
     mode = 'n',
@@ -24,7 +24,7 @@ wk.add({
   },
   {
     'gr',
-    function()
+    function ()
       vim.lsp.buf.rename()
     end,
     mode = 'n',
@@ -32,7 +32,7 @@ wk.add({
   },
   {
     'gu',
-    function()
+    function ()
       vim.lsp.buf.references()
     end,
     mode = 'n',
@@ -40,7 +40,7 @@ wk.add({
   },
   {
     'gq',
-    function()
+    function ()
       vim.lsp.buf.code_action()
     end,
     mode = 'n',

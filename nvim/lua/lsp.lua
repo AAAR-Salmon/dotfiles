@@ -2,7 +2,7 @@ require('mason').setup()
 require('mason-lspconfig').setup()
 
 require('mason-lspconfig').setup_handlers {
-  function(server_name)
+  function (server_name)
     require('lspconfig')[server_name].setup {
       capabilities = require('cmp_nvim_lsp').default_capabilities(),
     }
@@ -12,15 +12,15 @@ require('mason-lspconfig').setup_handlers {
 require('lspconfig').rust_analyzer.setup({
   capabilities = require('cmp_nvim_lsp').default_capabilities(),
   settings = {
-    ["rust-analyzer"] = {
+    ['rust-analyzer'] = {
       check = {
-        command = "clippy",
+        command = 'clippy',
       },
       imports = {
         granularity = {
-          group = "module",
+          group = 'module',
         },
-        prefix = "self",
+        prefix = 'self',
       },
       cargo = {
         buildScripts = {
@@ -40,19 +40,19 @@ vim.diagnostic.config({
   underline = true,
 })
 
-vim.api.nvim_create_autocmd("LspAttach", {
-  callback = function(args)
+vim.api.nvim_create_autocmd('LspAttach', {
+  callback = function (args)
     local buffer = args.buf
     local client = vim.lsp.get_client_by_id(args.data.client_id)
 
     -- a
     vim.o.updatetime = 500
-    vim.api.nvim_create_autocmd("CursorHold", {
+    vim.api.nvim_create_autocmd('CursorHold', {
       buffer = bufnr,
-      callback = function()
+      callback = function ()
         local opts = {
           focusable = false,
-          close_events = { "BufLeave", "CursorMoved", "InsertEnter", "FocusLost" },
+          close_events = { 'BufLeave', 'CursorMoved', 'InsertEnter', 'FocusLost' },
           border = 'rounded',
           source = 'always',
           prefix = ' ',

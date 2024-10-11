@@ -8,11 +8,11 @@ return {
       'hrsh7th/cmp-path',
       'hrsh7th/cmp-emoji',
     },
-    config = function()
+    config = function ()
       local cmp = require('cmp')
       cmp.setup({
         snippet = {
-          expand = function(args)
+          expand = function (args)
             vim.snippet.expand(args.body)
           end,
         },
@@ -41,7 +41,7 @@ return {
           { name = 'buffer' },
         },
       })
-      cmp.setup.cmdline(':',{
+      cmp.setup.cmdline(':', {
         mapping = cmp.mapping.preset.cmdline(),
         sources = {
           { name = 'cmdline' },

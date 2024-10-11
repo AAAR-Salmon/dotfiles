@@ -14,13 +14,13 @@ return {
       'nvim-lua/plenary.nvim',
       'gbprod/none-ls-shellcheck.nvim',
     },
-    config = function()
+    config = function ()
       local null_ls = require('null-ls')
       null_ls.setup({
         sources = {
           null_ls.builtins.formatting.prettier,
-          require("none-ls-shellcheck.diagnostics"),
-          require("none-ls-shellcheck.code_actions"),
+          require('none-ls-shellcheck.diagnostics'),
+          require('none-ls-shellcheck.code_actions'),
         },
       })
     end,
