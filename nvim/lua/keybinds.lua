@@ -1,49 +1,11 @@
-local wk = require('which-key')
-
 vim.g.mapleader = ','
-wk.add({
-  { 'jk', '<esc>', mode = 'i' },
-  { 'Jk', '<esc>', mode = 'i' },
-  { 'q',  '<esc>', mode = 'v' },
-  {
-    'g=',
-    function ()
-      vim.lsp.buf.format()
-    end,
-    mode = 'n',
-    desc = 'Format by Language Server',
-  },
-  { 'G=', 'g=', mode = 'n', remap = true },
-  {
-    'gd',
-    function ()
-      vim.lsp.buf.definition()
-    end,
-    mode = 'n',
-    desc = 'Jump to definition by Language Server',
-  },
-  {
-    'gr',
-    function ()
-      vim.lsp.buf.rename()
-    end,
-    mode = 'n',
-    desc = 'Rename variable by Language Server',
-  },
-  {
-    'gu',
-    function ()
-      vim.lsp.buf.references()
-    end,
-    mode = 'n',
-    desc = 'Jump to references by Language Server',
-  },
-  {
-    'gq',
-    function ()
-      vim.lsp.buf.code_action()
-    end,
-    mode = 'n',
-    desc = 'Action (quickfix) by Language Server',
-  },
-})
+
+vim.keymap.set('i', 'jk', '<esc>')
+vim.keymap.set('i', 'Jk', '<esc>')
+vim.keymap.set('v', 'q', '<esc>')
+vim.keymap.set('n', 'g=', vim.lsp.buf.format, { desc = 'Format by Language Server' })
+vim.keymap.set('n', 'G=', 'g=', { remap = true })
+vim.keymap.set('n', 'gd', vim.lsp.buf.definition, { desc = 'Jump to definition by Language Server' })
+vim.keymap.set('n', 'gr', vim.lsp.buf.rename, { desc = 'Rename variable by Language Server' })
+vim.keymap.set('n', 'gu', vim.lsp.buf.references, { desc = 'Jump to references by Language Server' })
+vim.keymap.set('n', 'gq', vim.lsp.buf.code_action, { desc = 'Action (quickfix) by Language Server' })
