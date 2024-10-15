@@ -27,9 +27,6 @@ return {
   },
   {
     'smoka7/hop.nvim',
-    dependencies = {
-      'folke/which-key.nvim',
-    },
     opts = {},
     keys = {
       { '<leader>h', '<cmd>HopChar1<cr>', mode = { 'n', 'v', 'o' }, desc = 'hop char1' },
@@ -37,9 +34,6 @@ return {
   },
   {
     'kazhala/close-buffers.nvim',
-    dependencies = {
-      'folke/which-key.nvim',
-    },
     keys = {
       { '<leader>ba', '<cmd>BWipeout all<cr>',   mode = 'n', desc = 'close-buffers wipe all' },
       { '<leader>bo', '<cmd>BWipeout other<cr>', mode = 'n', desc = 'close-buffers wipe other' },
@@ -60,5 +54,6 @@ return {
   },
   {
     'folke/which-key.nvim',
+    event = { 'VeryLazy' },
   },
 }
