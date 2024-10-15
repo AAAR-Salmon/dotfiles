@@ -1,6 +1,7 @@
 return {
   {
     'nvim-telescope/telescope.nvim',
+    cmd = { 'Telescope' },
     dependencies = {
       'nvim-lua/plenary.nvim',
     },
@@ -9,19 +10,20 @@ return {
       { '<leader>fb', '<cmd>Telescope buffers<cr>',   mode = 'n', desc = 'telescope buffers' },
       { '<leader>fh', '<cmd>Telescope help_tags<cr>', mode = 'n', desc = 'telescope help_tags' },
     },
-  },
-  {
-    'nvim-telescope/telescope-frecency.nvim',
-    dependencies = {
-      'nvim-telescope/telescope.nvim',
-    },
-    keys = {
-      { '<leader>ff', '<cmd>Telescope frecency workspace=CWD<cr>', mode = 'n', desc = 'telescope find_files' },
-    },
     config = function ()
       local telescope = require('telescope')
       telescope.load_extension('frecency')
     end,
+  },
+  {
+    'nvim-telescope/telescope-frecency.nvim',
+    keys = {
+      { '<leader>ff', '<cmd>Telescope frecency workspace=CWD<cr>', mode = 'n', desc = 'telescope find_files' },
+    },
+    opts = {
+      -- See https://github.com/nvim-telescope/telescope-frecency.nvim/issues/270
+      db_safe_mode = false,
+    },
   },
   {
     'smoka7/hop.nvim',
