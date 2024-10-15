@@ -4,11 +4,12 @@ return {
   },
   {
     'iamcco/markdown-preview.nvim',
-    run = 'cd app && yarn install',
-    setup = function ()
+    ft = { 'markdown' },
+    cmd = { 'MarkdownPreviewToggle', 'MarkdownPreview', 'MarkdownPreviewStop' },
+    build = 'cd app && COREPACK_ENABLE_AUTO_PIN=0 yarn install',
+    init = function ()
       vim.g.mkdp_filetypes = { 'markdown' }
     end,
-    ft = { 'markdown' },
   },
   {
     'nmac427/guess-indent.nvim',
