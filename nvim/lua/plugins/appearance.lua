@@ -17,24 +17,19 @@ return {
     'romgrk/barbar.nvim',
     dependencies = {
       'nvim-tree/nvim-web-devicons',
-      {
-        'lewis6991/gitsigns.nvim',
-        config = function ()
-          require('gitsigns').setup()
-        end,
-      },
+      'lewis6991/gitsigns.nvim',
     },
   },
   {
+    'lewis6991/gitsigns.nvim',
+    opts = {},
+  },
+  {
     'folke/trouble.nvim',
-    config = function ()
-      local wk = require('which-key')
-      require('trouble').setup({
-        wk.add({
-          { '<leader>tb', '<cmd>Trouble diagnostics toggle filter.buf=0<cr>', mode = 'n', desc = 'Trouble Buffer Diagnostics' },
-        }),
-      })
-    end,
+    opts = {},
+    keys = {
+      { '<leader>tb', '<cmd>Trouble diagnostics toggle filter.buf=0<cr>', mode = 'n', desc = 'Trouble Buffer Diagnostics' },
+    },
   },
   {
     'folke/noice.nvim',
@@ -44,24 +39,20 @@ return {
       -- https://github.com/folke/noice.nvim/issues/938
       'stevearc/dressing.nvim',
     },
-    config = function ()
-      require('noice').setup()
-    end,
+    opts = {},
   },
   {
     'shellRaining/hlchunk.nvim',
     dependencies = {
       'nvim-treesitter/nvim-treesitter',
     },
-    -- event = { 'BufReadPre', 'BufNewFile' },
-    config = function ()
-      require('hlchunk').setup({
-        chunk = {
-          enable = true,
-          delay = 0,
-        },
-      })
-    end,
+    event = { 'BufReadPre', 'BufNewFile' },
+    opts = {
+      chunk = {
+        enable = true,
+        delay = 0,
+      },
+    },
   },
   {
     'bronson/vim-trailing-whitespace',

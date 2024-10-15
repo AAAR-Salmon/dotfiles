@@ -12,21 +12,19 @@ return {
   },
   {
     'nmac427/guess-indent.nvim',
-    config = function ()
+    init = function ()
       vim.opt.tabstop = 2
       vim.opt.softtabstop = 2
       vim.opt.shiftwidth = 2
       vim.opt.expandtab = true
-      require('guess-indent').setup()
     end,
+    opts = {},
   },
   {
     'anuvyklack/help-vsplit.nvim',
-    config = function ()
-      require('help-vsplit').setup({
-        always = true,
-        side = 'right',
-      })
-    end,
+    opts = {
+      always = true,
+      side = 'right',
+    },
   },
 }
