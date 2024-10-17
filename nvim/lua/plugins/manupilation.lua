@@ -53,6 +53,11 @@ return {
     'machakann/vim-sandwich',
   },
   {
+    'm4xshen/autoclose.nvim',
+    event = { 'InsertEnter' },
+    opts = {},
+  },
+  {
     'folke/which-key.nvim',
     event = { 'VeryLazy' },
   },
