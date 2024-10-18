@@ -5,5 +5,9 @@ return {
       'nvim-tree/nvim-web-devicons',
     },
     opts = {},
+    keys = {
+      { '<leader>ee', '<cmd>NvimTreeToggle<cr>',   mode = 'n', desc = 'NvimTreeToggle' },
+      { '<leader>ef', '<cmd>NvimTreeFindFile<cr>', mode = 'n', desc = 'NvimTreeFindFile' },
+    },
   },
 }
