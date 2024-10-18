@@ -15,6 +15,7 @@ return {
   },
   {
     'romgrk/barbar.nvim',
+    event = { 'BufReadPre', 'BufWrite', 'BufFilePre' },
     dependencies = {
       'nvim-tree/nvim-web-devicons',
       'lewis6991/gitsigns.nvim',
@@ -33,6 +34,7 @@ return {
   },
   {
     'folke/noice.nvim',
+    event = { 'VeryLazy' },
     dependencies = {
       'MunifTanjim/nui.nvim',
       'rcarriga/nvim-notify',

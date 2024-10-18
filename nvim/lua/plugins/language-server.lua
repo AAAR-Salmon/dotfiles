@@ -1,15 +1,19 @@
 return {
   {
     'neovim/nvim-lspconfig',
+    event = { 'VeryLazy' },
   },
   {
     'williamboman/mason.nvim',
+    event = { 'VeryLazy' },
   },
   {
     'williamboman/mason-lspconfig.nvim',
+    event = { 'VeryLazy' },
   },
   {
     'nvimtools/none-ls.nvim',
+    event = { 'VeryLazy' },
     dependencies = {
       'nvim-lua/plenary.nvim',
       'gbprod/none-ls-shellcheck.nvim',
@@ -27,5 +31,6 @@ return {
   },
   {
     'jay-babu/mason-null-ls.nvim',
+    event = { 'VeryLazy' },
   },
 }
