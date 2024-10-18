@@ -34,6 +34,9 @@ opt.helplang = { 'ja', 'en' }
 vim.cmd('set formatexpr=autofmt#japanese#formatexpr()')
 
 vim.filetype.add({
+  extension = {
+    http = 'http',
+  },
   filename = {
     ['compose.yaml'] = 'yaml.docker-compose',
     ['compose.yml'] = 'yaml.docker-compose',
