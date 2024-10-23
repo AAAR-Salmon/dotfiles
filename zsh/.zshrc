@@ -25,11 +25,6 @@ function cd-git-dir() {
 }
 
 # aqua managed tools config
-## aqua
-export AQUA_ROOT_DIR="$HOME/.local/share/aquaproj-aqua"
-export AQUA_GLOBAL_CONFIG="$DOTFILES/aquaproj-aqua/aqua.yaml"
-export PATH="$PATH:$AQUA_ROOT_DIR/bin"
-
 ## direnv
 if command -v direnv >/dev/null 2>&1; then
   eval "$(direnv hook zsh)"

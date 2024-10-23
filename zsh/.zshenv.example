@@ -10,4 +10,9 @@ export PAGER="less -S"
 
 skip_global_compinit=1
 
+# aqua
+export AQUA_ROOT_DIR="$HOME/.local/share/aquaproj-aqua"
+export AQUA_GLOBAL_CONFIG="$DOTFILES/aquaproj-aqua/aqua.yaml"
+export PATH="$PATH:$AQUA_ROOT_DIR/bin"
+
 source "$ZDOTDIR/.zshenv.local"
