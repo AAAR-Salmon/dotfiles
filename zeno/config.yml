@@ -9,3 +9,106 @@ completions:
       --prompt: "'Run Script> '"
     callback:
       awk -F ' {2,}' '{print $1}'
+snippets:
+  - name: parent
+    keyword: ..
+    snippet: cd ..
+  - name: grandparent
+    keyword: ...
+    snippet: cd ../..
+  - name: great-grandparent
+    keyword: ....
+    snippet: cd ../../..
+  - name: cd git-repo root
+    keyword: cg
+    snippet: cd-git-dir
+  - name: cd git-repo root
+    keyword: cdg
+    snippet: cd-git-dir
+  - name: docker
+    keyword: d
+    snippet: docker
+  - name: docker compose
+    keyword: dc
+    snippet: docker compose
+  - name: thefuck
+    keyword: f
+    snippet: fuck
+  - name: git
+    keyword: g
+    snippet: git
+  - name: git add
+    keyword: ga
+    snippet: git add
+  - name: git add tracking file
+    keyword: gan
+    snippet: git add -N
+  - name: git add patch
+    keyword: gap
+    snippet: git add -p
+  - name: git commit
+    keyword: gc
+    snippet: git commit
+  - name: git fix commit message
+    keyword: gca
+    snippet: git commit --amend
+  - name: git re-commit
+    keyword: gcan
+    snippet: git commit --amend --no-edit
+  - name: git commit with message
+    keyword: gcm
+    snippet: git commit -m
+  - name: git diff
+    keyword: gd
+    snippet: git diff
+  - name: git diff staged only
+    keyword: gds
+    snippet: git diff --staged
+  - name: git fetch
+    keyword: gf
+    snippet: git fetch --all --tags --prune
+  - name: git graph
+    keyword: gg
+    snippet: git log --all --oneline --graph
+  - name: git log
+    keyword: gl
+    snippet: git log
+  - name: git log in oneline
+    keyword: glo
+    snippet: git --no-pager log --oneline --graph -20
+  - name: git pull
+    keyword: gp
+    snippet: git pull --prune
+  - name: git restore
+    keyword: gr
+    snippet: git restore
+  - name: git unstage
+    keyword: grs
+    snippet: git restore --staged
+  - name: git partial unstage
+    keyword: grp
+    snippet: git restore --staged -p
+  - name: git status
+    keyword: gs
+    snippet: git status
+  - name: git switch
+    keyword: gs
+    snippet: git switch
+  - name: ls
+    keyword: l
+    snippet: ls -F
+  - name: ls all
+    keyword: la
+    snippet: ls -AF
+  - name: ls long
+    keyword: ll
+    snippet: ls -lhAF
+  - name: tmux
+    keyword: t
+    snippet: tmux
+  - name: neovim
+    keyword: v
+    snippet: nvim
+  - name: neovim cwd
+    keyword: v.
+    snippet: nvim .

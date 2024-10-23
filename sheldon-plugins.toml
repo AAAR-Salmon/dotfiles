@@ -21,15 +21,6 @@ github = 'zsh-users/zsh-completions'
 [plugins.zsh-autosuggestions]
 github = 'zsh-users/zsh-autosuggestions'
 
-[plugins.zsh-abbr]
-github = 'olets/zsh-abbr'
-use = ['zsh-abbr.plugin.zsh']
-hooks.pre = """
-export ABBR_USER_ABBREVIATIONS_FILE="$DOTFILES/user-abbreviations"
-export ABBR_FORCE=1
-export ABBR_QUIET=1
-"""
-
 [plugins.zeno]
 github = 'yuki-yano/zeno.zsh'
 hooks.pre = """
@@ -37,6 +28,10 @@ export ZENO_HOME=$DOTFILES/zeno
 """
 hooks.post = """
 if [[ -n $ZENO_LOADED ]]; then
+  # snippet expansion
+  bindkey ' ' zeno-auto-snippet
+  bindkey '^m' zeno-auto-snippet-and-accept-line
+  # completion expansion
   bindkey '^i' zeno-completion
   export ZENO_COMPLETION_FALLBACK=expand-or-complete
 fi
