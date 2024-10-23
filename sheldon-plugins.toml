@@ -12,6 +12,9 @@
 
 [plugins]
 
+[plugins.zsh-defer]
+github = 'romkatv/zsh-defer'
+
 [plugins.zsh-async]
 github = 'mafredri/zsh-async'
 
