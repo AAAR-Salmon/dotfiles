@@ -92,7 +92,7 @@ snippets:
     keyword: gs
     snippet: git status
   - name: git switch
-    keyword: gs
+    keyword: gsw
     snippet: git switch
   - name: ls
     keyword: l
