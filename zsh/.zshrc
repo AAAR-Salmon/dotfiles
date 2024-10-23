@@ -27,7 +27,7 @@ function cd-git-dir() {
 # aqua managed tools config
 ## direnv
 if command -v direnv >/dev/null 2>&1; then
-  eval "$(direnv hook zsh)"
+  zsh-defer eval "$(direnv hook zsh)"
 fi
 
 ## Deno
