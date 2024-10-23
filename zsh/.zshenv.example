@@ -8,4 +8,6 @@ export FPATH="$HOME/.local/share/zfunc:$FPATH"
 export EDITOR="nvim"
 export PAGER="less -S"
 
+skip_global_compinit=1
+
 source "$ZDOTDIR/.zshenv.local"
