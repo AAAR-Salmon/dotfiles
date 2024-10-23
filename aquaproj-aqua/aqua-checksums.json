@@ -11,13 +11,8 @@
       "algorithm": "sha256"
     },
     {
-      "id": "github_release/github.com/ajeetdsouza/zoxide/v0.9.4/zoxide-0.9.4-x86_64-unknown-linux-musl.tar.gz",
-      "checksum": "FBC22C115A252F9A5C73301E35ED695810D020126B126C3D0E47F0B31F2255A0",
-      "algorithm": "sha256"
-    },
-    {
-      "id": "github_release/github.com/ajeetdsouza/zoxide/v0.9.5/zoxide-0.9.5-x86_64-unknown-linux-musl.tar.gz",
-      "checksum": "0C429709417AE0B6F655AF12692E108145E7AEA9659A5B148B29EF1EFF91AFD2",
+      "id": "github_release/github.com/ajeetdsouza/zoxide/v0.9.6/zoxide-0.9.6-x86_64-unknown-linux-musl.tar.gz",
+      "checksum": "EAA18F8ACA1F02E1A132A9EAC21B630918F96FA1CC7486AB87E7053DAD37B004",
       "algorithm": "sha256"
     },
     {
@@ -31,8 +26,8 @@
       "algorithm": "sha256"
     },
     {
-      "id": "github_release/github.com/casey/just/1.35.0/just-1.35.0-x86_64-unknown-linux-musl.tar.gz",
-      "checksum": "C4172306E241BD175C07316156A610593FA2B687AC49418520A375605D7CEAD4",
+      "id": "github_release/github.com/casey/just/1.36.0/just-1.36.0-x86_64-unknown-linux-musl.tar.gz",
+      "checksum": "BC7C9F377944F8DE9CD0418B11D2955ADEBFA25A488C0B5E3DD2D2C0E9D732DA",
       "algorithm": "sha256"
     },
     {
@@ -41,23 +36,18 @@
       "algorithm": "sha256"
     },
     {
-      "id": "github_release/github.com/dandavison/delta/0.18.1/delta-0.18.1-x86_64-unknown-linux-musl.tar.gz",
-      "checksum": "2F39630CB1AE1D40414D33E8C4E90344045A20A4E42981A464ED5A48726A4820",
-      "algorithm": "sha256"
-    },
-    {
       "id": "github_release/github.com/dandavison/delta/0.18.2/delta-0.18.2-x86_64-unknown-linux-musl.tar.gz",
       "checksum": "B7EA845004762358A00EF9127DD9FD723E333C7E4B9CB1DA220C3909372310EE",
       "algorithm": "sha256"
     },
     {
-      "id": "github_release/github.com/denoland/deno/v1.46.3/deno-x86_64-unknown-linux-gnu.zip",
-      "checksum": "39BB1D21AD19C16FCB14F9D58FB542C2BCCF0CD92C19AEE8127AC5112B48BF83",
+      "id": "github_release/github.com/denoland/deno/v2.0.2/deno-x86_64-unknown-linux-gnu.zip",
+      "checksum": "D5001850EF8CC317315A7CBEC20C9C8C7F44314F7D77410410F3559FCE5B90CE",
       "algorithm": "sha256"
     },
     {
-      "id": "github_release/github.com/direnv/direnv/v2.34.0/direnv.linux-amd64",
-      "checksum": "F7F2C814C2EAE48641E4BDE9BF11F463E309C8F7E3737F96C78588150E1DCE25",
+      "id": "github_release/github.com/direnv/direnv/v2.35.0/direnv.linux-amd64",
+      "checksum": "55C294F4376397C68B1F659F049FB104DC2ECD0FCB15A15949D7F748E3F70B66",
       "algorithm": "sha256"
     },
     {
@@ -76,8 +66,8 @@
       "algorithm": "sha256"
     },
     {
-      "id": "github_release/github.com/neovim/neovim/v0.10.1/nvim-linux64.tar.gz",
-      "checksum": "4867DE01A17F6083F902F8AA5215B40B0ED3A36E83CC0293DE3F11708F1F9793",
+      "id": "github_release/github.com/neovim/neovim/v0.10.2/nvim-linux64.tar.gz",
+      "checksum": "9F696E635D503B844E4E78E88A22BCF512A78F288BF471379AFC3D0004E15217",
       "algorithm": "sha256"
     },
     {
@@ -101,13 +91,8 @@
       "algorithm": "sha256"
     },
     {
-      "id": "registries/github_content/github.com/aquaproj/aqua-registry/v4.220.1/registry.yaml",
-      "checksum": "E52926392614425EFC6D74D06B885F918A401FC2E44500FFD0A0D19758BCCE0EFBC0A4F7760058ACD1007B69D2239C9834A4151CCC963DE2E65D6D267A0E0906",
-      "algorithm": "sha512"
-    },
-    {
-      "id": "registries/github_content/github.com/aquaproj/aqua-registry/v4.221.0/registry.yaml",
-      "checksum": "6AB5B060EB966C63B4C8F626684181EF576CAC31105E8FF50AC06C6F7073DA378B9C2C96083A2D9FD7467CE54F026CD0465FEE82F0E6454296891283F6E0FC36",
+      "id": "registries/github_content/github.com/aquaproj/aqua-registry/v4.239.0/registry.yaml",
+      "checksum": "D3CAA8F0575A5AE21EF32C9FE4CEB74E9DB5B82C5B1E72BD5EB7A036222DD1DA5E98D7E26D0BDBFB70C936F048FF9A563563F62CA08D48E570CD7C55D7F6F508",
       "algorithm": "sha512"
     }
   ]
