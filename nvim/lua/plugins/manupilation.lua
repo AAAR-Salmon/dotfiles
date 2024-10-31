@@ -6,9 +6,10 @@ return {
       'nvim-lua/plenary.nvim',
     },
     keys = {
-      { '<leader>fg', '<cmd>Telescope live_grep<cr>', mode = 'n', desc = 'telescope live_grep' },
-      { '<leader>fb', '<cmd>Telescope buffers<cr>',   mode = 'n', desc = 'telescope buffers' },
-      { '<leader>fh', '<cmd>Telescope help_tags<cr>', mode = 'n', desc = 'telescope help_tags' },
+      { '<leader>fg', '<cmd>Telescope live_grep<cr>',  mode = 'n', desc = 'telescope live_grep' },
+      { '<leader>fb', '<cmd>Telescope buffers<cr>',    mode = 'n', desc = 'telescope buffers' },
+      { '<leader>fh', '<cmd>Telescope help_tags<cr>',  mode = 'n', desc = 'telescope help_tags' },
+      { '<leader>fs', '<cmd>Telescope git_status<cr>', mode = 'n', desc = 'telescope git_status' },
     },
     config = function ()
       local telescope = require('telescope')
