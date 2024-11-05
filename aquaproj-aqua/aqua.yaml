@@ -9,7 +9,7 @@ checksum:
   - linux/amd64
 registries:
 - type: standard
-  ref: v4.239.0 # renovate: depName=aquaproj/aqua-registry
+  ref: v4.246.1 # renovate: depName=aquaproj/aqua-registry
 packages:
 - name: BurntSushi/ripgrep@14.1.1
 - name: babarot/gomi@v1.1.6
@@ -22,10 +22,10 @@ packages:
 - name: direnv/direnv@v2.35.0
 - name: ismaelgv/rnr@v0.4.2
 - name: jqlang/jq@jq-1.7.1
-- name: junegunn/fzf@v0.55.0
+- name: junegunn/fzf@v0.56.0
 - name: neovim/neovim@v0.10.2
 - name: rossmacarthur/sheldon@0.8.0
 - name: sharkdp/bat@v0.24.0
 - name: upx/upx@v4.2.4
-- name: denoland/deno@v2.0.2
+- name: denoland/deno@v2.0.4
 - name: ClementTsang/bottom@0.10.2
