@@ -76,4 +76,8 @@ return {
     'folke/which-key.nvim',
     event = { 'VeryLazy' },
   },
+  {
+    'tpope/vim-abolish',
+    cmd = { 'S', 'Subvert' },
+  },
 }
