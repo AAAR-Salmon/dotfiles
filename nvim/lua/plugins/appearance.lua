@@ -22,6 +22,12 @@ return {
       'nvim-tree/nvim-web-devicons',
       'lewis6991/gitsigns.nvim',
     },
+    keys = {
+      { '<leader>th', '<cmd>BufferPrevious<cr>',     mode = 'n', desc = 'navigate to left buffer' },
+      { '<leader>tl', '<cmd>BufferNext<cr>',         mode = 'n', desc = 'navigate to right buffer' },
+      { '<leader>t<', '<cmd>BufferMovePrevious<cr>', mode = 'n', desc = 'move buffer to left' },
+      { '<leader>t>', '<cmd>BufferMoveNext<cr>',     mode = 'n', desc = 'move buffer to right' },
+    },
   },
   {
     'lewis6991/gitsigns.nvim',
