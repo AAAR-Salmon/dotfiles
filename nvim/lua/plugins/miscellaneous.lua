@@ -3,6 +3,17 @@ return {
     'vim-jp/autofmt',
   },
   {
+    'akinsho/toggleterm.nvim',
+    version = '*',
+    cmd = { 'ToggleTerm' },
+    keys = {
+      { '<leader>!', '<cmd>ToggleTerm<cr>', mode = 'n', desc = 'open floating terminal' },
+    },
+    opts = {
+      direction = 'float',
+    },
+  },
+  {
     'iamcco/markdown-preview.nvim',
     ft = { 'markdown' },
     cmd = { 'MarkdownPreviewToggle', 'MarkdownPreview', 'MarkdownPreviewStop' },

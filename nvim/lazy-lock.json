@@ -38,6 +38,7 @@
   "supertab": { "branch": "main", "commit": "8c638fe17b470f4a27554cdf8e641bafa5e2a7a4" },
   "telescope-frecency.nvim": { "branch": "master", "commit": "f67baca08423a6fd00167801a54db38e0b878063" },
   "telescope.nvim": { "branch": "master", "commit": "85922dde3767e01d42a08e750a773effbffaea3e" },
+  "toggleterm.nvim": { "branch": "main", "commit": "022ff5594acccc8d90d2e46dc43994f7722ebdf7" },
   "treesj": { "branch": "main", "commit": "0d81326b5afd36babe7dd480aabbb0b05f33e688" },
   "trouble.nvim": { "branch": "main", "commit": "2f3b537f2207ce32f4459f9d56746ee013b5e01b" },
   "vim-abolish": { "branch": "master", "commit": "dcbfe065297d31823561ba787f51056c147aa682" },
