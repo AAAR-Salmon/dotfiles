@@ -68,7 +68,9 @@ return {
       panel = {
         enabled = false,
       },
-      filetypes = {},
+      filetypes = {
+        ['*'] = true,
+      },
     },
   },
 }
