@@ -57,6 +57,10 @@ return {
   {
     'zbirenbaum/copilot.lua',
     cmd = { 'Copilot' },
+    keys = {
+      { '<leader>cc', '<cmd>Copilot! toggle<cr>', mode = 'n', desc = 'Toggle Copilot' },
+      { '<leader>cs', '<cmd>Copilot! status<cr>', mode = 'n', desc = 'Show Copilot status' },
+    },
     opts = {
       suggestion = {
         enabled = false,
@@ -64,6 +68,7 @@ return {
       panel = {
         enabled = false,
       },
+      filetypes = {},
     },
   },
 }
