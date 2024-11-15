@@ -8,6 +8,7 @@ return {
       'hrsh7th/cmp-cmdline',
       'hrsh7th/cmp-path',
       'hrsh7th/cmp-emoji',
+      'zbirenbaum/copilot-cmp',
     },
     config = function ()
       local cmp = require('cmp')
@@ -27,9 +28,8 @@ return {
         },
         sources = cmp.config.sources(
           {
+            { name = 'copilot' },
             { name = 'nvim_lsp' },
-          },
-          {
             { name = 'buffer' },
             { name = 'path' },
             { name = 'emoji' },
@@ -49,5 +49,21 @@ return {
         },
       })
     end,
+  },
+  {
+    'zbirenbaum/copilot-cmp',
+    opts = {},
+  },
+  {
+    'zbirenbaum/copilot.lua',
+    cmd = { 'Copilot' },
+    opts = {
+      suggestion = {
+        enabled = false,
+      },
+      panel = {
+        enabled = false,
+      },
+    },
   },
 }
