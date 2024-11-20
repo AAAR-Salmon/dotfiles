@@ -5,7 +5,11 @@ return {
     dependencies = {
       'nvim-tree/nvim-web-devicons',
     },
-    opts = {},
+    opts = {
+      renderer = {
+        full_name = true,
+      },
+    },
     keys = {
       { '<leader>ee', '<cmd>NvimTreeToggle<cr>',   mode = 'n', desc = 'NvimTreeToggle' },
       { '<leader>ef', '<cmd>NvimTreeFindFile<cr>', mode = 'n', desc = 'NvimTreeFindFile' },
