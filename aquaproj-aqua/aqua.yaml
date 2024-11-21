@@ -29,3 +29,4 @@ packages:
 - name: upx/upx@v4.2.4
 - name: denoland/deno@v2.1.0
 - name: ClementTsang/bottom@0.10.2
+- name: typst/typst@v0.12.0
