@@ -26,8 +26,8 @@
       "algorithm": "sha256"
     },
     {
-      "id": "github_release/github.com/casey/just/1.36.0/just-1.36.0-x86_64-unknown-linux-musl.tar.gz",
-      "checksum": "BC7C9F377944F8DE9CD0418B11D2955ADEBFA25A488C0B5E3DD2D2C0E9D732DA",
+      "id": "github_release/github.com/casey/just/1.37.0/just-1.37.0-x86_64-unknown-linux-musl.tar.gz",
+      "checksum": "9E301DA1A46153B4C9ADF9EFE20D05361467B5591B1B3CF8880DB59A1D019963",
       "algorithm": "sha256"
     },
     {
@@ -41,8 +41,8 @@
       "algorithm": "sha256"
     },
     {
-      "id": "github_release/github.com/denoland/deno/v2.0.4/deno-x86_64-unknown-linux-gnu.zip",
-      "checksum": "3E2185CCABA1977402A4217E7BF01E149F7B44306FFFFEBFCC1D18FD9557E20B",
+      "id": "github_release/github.com/denoland/deno/v2.1.0/deno-x86_64-unknown-linux-gnu.zip",
+      "checksum": "C36C65B06B1D68F2A2AF9F6EFB6AC76634F14B1F2F7E1967CF3BC40BB3C8BE30",
       "algorithm": "sha256"
     },
     {
@@ -61,8 +61,8 @@
       "algorithm": "sha256"
     },
     {
-      "id": "github_release/github.com/junegunn/fzf/v0.56.0/fzf-0.56.0-linux_amd64.tar.gz",
-      "checksum": "7AFAD5DCC3E3A7CBAEF577EC02C4DD90280E283BC16DA99809498F75A5F18080",
+      "id": "github_release/github.com/junegunn/fzf/v0.56.3/fzf-0.56.3-linux_amd64.tar.gz",
+      "checksum": "78E96A88CECFBDB3FF65DF89CC47C02573407AEE0EDD08C87E18A8033D498FEF",
       "algorithm": "sha256"
     },
     {
@@ -91,8 +91,8 @@
       "algorithm": "sha256"
     },
     {
-      "id": "registries/github_content/github.com/aquaproj/aqua-registry/v4.246.1/registry.yaml",
-      "checksum": "77C0B7AC5D4B02E83865D4A10318594365C567A8F3F2C10A5418C7B4142D16823046C40B538EF3D2ABF292D2887F366D0B3822F8939A3C665BD83128938A9D18",
+      "id": "registries/github_content/github.com/aquaproj/aqua-registry/v4.256.1/registry.yaml",
+      "checksum": "DC8E67F511B38E1309D4CD30294ECC596CB0140F737669EA3AB81F0E606B77EB4161DE553744481F4FC4E94EC19BD18B96F28F4592D1038045EAECB02C2CAAF0",
       "algorithm": "sha512"
     }
   ]
