@@ -42,6 +42,14 @@ return {
     },
   },
   {
+    'folke/todo-comments.nvim',
+    cmds = { 'TodoTelescope' },
+    keys = {
+      { '<leader>ft', '<cmd>TodoTelescope<cr>', mode = 'n', desc = 'TodoTelescope' },
+    },
+    opts = {},
+  },
+  {
     'folke/noice.nvim',
     event = { 'VeryLazy' },
     dependencies = {
