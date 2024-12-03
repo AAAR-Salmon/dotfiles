@@ -1,2 +1,8 @@
 [tools]
+uv = "latest"
 "npm:serve" = "latest"
+"pipx:httpie" = "latest"
+"pipx:thefuck" = { version = "latest", uvx_args = "--python 3.8" }
+
+[settings]
+pipx.uvx = true
