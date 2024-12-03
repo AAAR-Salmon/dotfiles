@@ -56,6 +56,11 @@
       "algorithm": "sha256"
     },
     {
+      "id": "github_release/github.com/jdx/mise/v2024.11.37/mise-v2024.11.37-linux-x64-musl.tar.gz",
+      "checksum": "6F5042C1BB336030936939C8DEEBDF0B7608B839148F9FD3560E4422F2E04FFC",
+      "algorithm": "sha256"
+    },
+    {
       "id": "github_release/github.com/jqlang/jq/jq-1.7.1/jq-linux-amd64",
       "checksum": "5942C9B0934E510EE61EB3E30273F1B3FE2590DF93933A93D7C58B81D19C8FF5",
       "algorithm": "sha256"
