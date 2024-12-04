@@ -47,8 +47,11 @@ if command -v zoxide >/dev/null 2>&1; then
   eval "$(zoxide init zsh)"
 fi
 
-## mise-en-place
+# mise-en-place
 eval "$(mise activate zsh)"
+
+## thefuck
+eval "$(mise exec -- thefuck --alias)"
 
 # load local overrides
 source "$ZDOTDIR/.zshrc.local"
