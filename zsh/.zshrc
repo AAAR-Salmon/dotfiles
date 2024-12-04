@@ -3,6 +3,7 @@ bindkey -d
 bindkey -e
 
 # Load plugins
+export SHELDON_CONFIG_DIR="$DOTFILES/sheldon"
 eval "$(sheldon source)"
 
 # Config command history
