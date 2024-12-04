@@ -14,6 +14,10 @@ return {
     },
   },
   {
+    'stevearc/overseer.nvim',
+    opts = {},
+  },
+  {
     'iamcco/markdown-preview.nvim',
     ft = { 'markdown' },
     cmd = { 'MarkdownPreviewToggle', 'MarkdownPreview', 'MarkdownPreviewStop' },
