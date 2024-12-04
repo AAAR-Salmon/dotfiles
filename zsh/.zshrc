@@ -13,7 +13,7 @@ export SAVEHIST=10000
 setopt incappendhistory
 
 # Alias
-alias rm='gomi'
+alias rm='rm -i'
 alias mv='mv -i'
 alias cp='cp -i'
 alias ls='ls --color=auto'

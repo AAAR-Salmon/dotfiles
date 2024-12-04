@@ -16,11 +16,6 @@
       "algorithm": "sha256"
     },
     {
-      "id": "github_release/github.com/babarot/gomi/v1.1.6/gomi_linux_x86_64.tar.gz",
-      "checksum": "3B05A1E4BC0C047A6B8083FF7C65FE7EF52DBBF8DFCEC1039A3358CC693A908A",
-      "algorithm": "sha256"
-    },
-    {
       "id": "github_release/github.com/bootandy/dust/v1.1.1/dust-v1.1.1-x86_64-unknown-linux-musl.tar.gz",
       "checksum": "4D0E7F3E39CE85E98CC69260AB6F40E460A455CD8575AF1BA70D14A2940AE553",
       "algorithm": "sha256"
