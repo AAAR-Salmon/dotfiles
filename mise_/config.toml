@@ -1,11 +1,29 @@
 [tools]
 bun = "latest"
+deno = "latest"
+neovim = "latest"
 uv = "latest"
+"aqua:BurntSushi/ripgrep" = "14.1.1"
+"aqua:ClementTsang/bottom" = "0.10.2"
+"aqua:ajeetdsouza/zoxide" = "0.9.6"
+"aqua:bootandy/dust" = "1.1.1"
+"aqua:casey/just" = "1.37.0"
+"aqua:chmln/sd" = "1.0.0"
+"aqua:dandavison/delta" = "0.18.2"
+"aqua:direnv/direnv" = "2.35.0"
+"aqua:ismaelgv/rnr" = "0.4.2"
+"aqua:jqlang/jq" = "1.7.1"
+"aqua:junegunn/fzf" = "0.56.3"
+"aqua:rossmacarthur/sheldon" = "0.8.0"
+"aqua:sharkdp/bat" = "0.24.0"
+"aqua:sharkdp/fd" = "10.2.0"
+"aqua:typst/typst" = "0.12.0"
 "npm:serve" = "latest"
 "pipx:httpie" = "latest"
 "pipx:thefuck" = { version = "latest", uvx_args = "--python 3.8" }
 "pipx:trash-cli" = "latest"
 
 [settings]
+aqua.cosign = true
 npm.bun = true
 pipx.uvx = true

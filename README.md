@@ -6,7 +6,7 @@ includes configs of:
 * [zsh](https://www.zsh.org/)
   * [sheldon](https://sheldon.cli.rs/)
 * [tmux](https://github.com/tmux/tmux/wiki)
-* [aqua](https://aquaproj.github.io/)
+* [mise](https://mise.jdx.dev/)
 
 ## Installation
 

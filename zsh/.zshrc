@@ -25,7 +25,12 @@ function cd-git-dir() {
   cd "$(git rev-parse --show-toplevel)"
 }
 
-# aqua managed tools config
+# mise-en-place
+eval "$(mise activate zsh)"
+
+## thefuck
+eval "$(mise exec -- thefuck --alias)"
+
 ## direnv
 if command -v direnv >/dev/null 2>&1; then
   zsh-defer eval "$(direnv hook zsh)"
@@ -47,12 +52,6 @@ fi
 if command -v zoxide >/dev/null 2>&1; then
   eval "$(zoxide init zsh)"
 fi
-
-# mise-en-place
-eval "$(mise activate zsh)"
-
-## thefuck
-eval "$(mise exec -- thefuck --alias)"
 
 # load local overrides
 source "$ZDOTDIR/.zshrc.local"
