@@ -2,10 +2,6 @@
 bindkey -d
 bindkey -e
 
-# Load plugins
-export SHELDON_CONFIG_DIR="$DOTFILES/sheldon"
-eval "$(sheldon source)"
-
 # Config command history
 export HISTFILE="$HOME/.history"
 export HISTSIZE=1000
@@ -26,10 +22,13 @@ function cd-git-dir() {
 }
 
 # mise-en-place
-eval "$(mise activate zsh)"
+
+## sheldon
+export SHELDON_CONFIG_DIR="$DOTFILES/sheldon"
+eval "$(sheldon source)"
 
 ## thefuck
-eval "$(mise exec -- thefuck --alias)"
+eval "$(thefuck --alias)"
 
 ## direnv
 if command -v direnv >/dev/null 2>&1; then
