@@ -53,7 +53,7 @@ if command -v zoxide >/dev/null 2>&1; then
 fi
 
 # load local overrides
-source "$ZDOTDIR/.zshrc.local"
+[ -f "$ZDOTDIR/.zshrc.local" ] && source "$ZDOTDIR/.zshrc.local"
 
 # Configure completion
 autoload -Uz compinit

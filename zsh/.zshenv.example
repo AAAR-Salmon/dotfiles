@@ -13,4 +13,4 @@ skip_global_compinit=1
 # mise-en-place
 eval "$(mise activate zsh --shims)"
 
-source "$ZDOTDIR/.zshenv.local"
+[ -f "$ZDOTDIR/.zshenv.local" ] && source "$ZDOTDIR/.zshenv.local"
