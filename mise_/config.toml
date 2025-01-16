@@ -1,8 +1,8 @@
 [tools]
-bun = "latest"
-deno = "2.1.4"
-neovim = "latest"
-uv = "0.5.9"
+bun = "1.1.43"
+deno = "2.1.5"
+neovim = "0.10.3"
+uv = "0.5.20"
 "aqua:BurntSushi/ripgrep" = "14.1.1"
 "aqua:ClementTsang/bottom" = "0.10.2"
 "aqua:ajeetdsouza/zoxide" = "0.9.6"
@@ -11,18 +11,18 @@ uv = "0.5.9"
 "aqua:chmln/sd" = "1.0.0"
 "aqua:dandavison/delta" = "0.18.2"
 "aqua:direnv/direnv" = "2.35.0"
-"aqua:ismaelgv/rnr" = "0.4.2"
+"aqua:ismaelgv/rnr" = "0.5.0"
 "aqua:jqlang/jq" = "1.7.1"
 "aqua:junegunn/fzf" = "0.57.0"
-"aqua:mikefarah/yq" = "4.44.6"
+"aqua:mikefarah/yq" = "4.45.1"
 "aqua:rossmacarthur/sheldon" = "0.8.0"
-"aqua:sharkdp/bat" = "0.24.0"
+"aqua:sharkdp/bat" = "0.25.0"
 "aqua:sharkdp/fd" = "10.2.0"
 "aqua:typst/typst" = "0.12.0"
-"npm:serve" = "latest"
-"pipx:httpie" = "latest"
-"pipx:thefuck" = { version = "latest", uvx_args = "--python 3.8" }
-"pipx:trash-cli" = "latest"
+"npm:serve" = "14.2.4"
+"pipx:httpie" = "3.2.4"
+"pipx:thefuck" = { version = "3.32", uvx_args = "--python 3.8" }
+"pipx:trash-cli" = "0.24.5.26"
 
 [settings]
 aqua.cosign = true
