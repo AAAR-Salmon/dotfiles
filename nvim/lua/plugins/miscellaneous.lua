@@ -38,6 +38,10 @@ return {
     },
   },
   {
+    'mechatroner/rainbow_csv',
+    ft = { 'csv' },
+  },
+  {
     'nvim-treesitter/nvim-treesitter',
     cmd = { 'TSInstall', 'TSUpdate' },
     config = function ()
