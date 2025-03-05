@@ -2,6 +2,7 @@
 bun = "1.2.2"
 deno = "2.1.9"
 neovim = "0.10.4"
+usage = "2.0.5"
 uv = "0.5.31"
 "aqua:BurntSushi/ripgrep" = "14.1.1"
 "aqua:ClementTsang/bottom" = "0.10.2"
