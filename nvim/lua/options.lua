@@ -31,7 +31,7 @@ opt.fileencodings = { 'utf-8', 'sjis' }
 
 opt.helplang = { 'ja', 'en' }
 
-vim.cmd('set formatexpr=autofmt#japanese#formatexpr()')
+-- vim.cmd('set formatexpr=autofmt#japanese#formatexpr()')
 
 vim.filetype.add({
   extension = {
