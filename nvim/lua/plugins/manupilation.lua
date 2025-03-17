@@ -68,6 +68,18 @@ return {
     'machakann/vim-sandwich',
   },
   {
+    'bassamsdata/namu.nvim',
+    cmd = { 'Namu' },
+    keys = {
+      { '<leader>js', '<cmd>Namu symbols<cr>', mode = 'n', desc = 'Jump to LSP symbol' },
+    },
+    opts = {
+      ui_select = {
+        enable = true,
+      },
+    },
+  },
+  {
     'm4xshen/autoclose.nvim',
     event = { 'InsertEnter' },
     opts = {},
