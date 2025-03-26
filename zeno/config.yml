@@ -91,6 +91,12 @@ snippets:
   - name: git status
     keyword: gs
     snippet: git status
+  - name: git stash push
+    keyword: gsp
+    snippet: git stash push -uk
+  - name: git stash pop
+    keyword: gspp
+    snippet: git stash pop
   - name: git switch
     keyword: gsw
     snippet: git switch
