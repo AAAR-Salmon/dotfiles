@@ -62,9 +62,6 @@ return {
     },
   },
   {
-    'ervandew/supertab',
-  },
-  {
     'machakann/vim-sandwich',
   },
   {
