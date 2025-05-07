@@ -1,38 +1,13 @@
 require('mason').setup()
-require('mason-lspconfig').setup()
-
-require('mason-lspconfig').setup_handlers {
-  function (server_name)
-    require('lspconfig')[server_name].setup {
-      capabilities = require('cmp_nvim_lsp').default_capabilities(),
-    }
-  end,
-}
-
-require('lspconfig').rust_analyzer.setup({
-  capabilities = require('cmp_nvim_lsp').default_capabilities(),
-  settings = {
-    ['rust-analyzer'] = {
-      check = {
-        command = 'clippy',
-      },
-      imports = {
-        granularity = {
-          group = 'module',
-        },
-        prefix = 'self',
-      },
-      cargo = {
-        buildScripts = {
-          enable = true,
-        },
-      },
-      procMacro = {
-        enable = true,
-      },
-    },
-  },
+require('mason-lspconfig').setup({
+  automatic_enable = true,
 })
+
+vim.lsp.config('*', {
+  capabilities = require('cmp_nvim_lsp').default_capabilities(),
+})
+
+vim.lsp.enable('rust_analyzer')
 
 vim.diagnostic.config({
   virtual_text = false,
