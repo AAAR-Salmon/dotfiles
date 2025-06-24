@@ -21,6 +21,7 @@ uv = "0.7.13"
 "aqua:sharkdp/fd" = "10.2.0"
 "aqua:typst/typst" = "0.13.1"
 "npm:@marp-team/marp-cli" = "4.2.0"
+"npm:ccusage" = "15.2.0"
 "npm:serve" = "14.2.4"
 "pipx:httpie" = "3.2.4"
 "pipx:thefuck" = { version = "3.32", uvx_args = "--python 3.8" }
