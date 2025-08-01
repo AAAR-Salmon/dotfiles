@@ -4,6 +4,8 @@ return {
     cmd = { 'Telescope' },
     dependencies = {
       'nvim-lua/plenary.nvim',
+      'nvim-telescope/telescope-frecency.nvim',
+      'Snikimonkd/telescope-git-conflicts.nvim',
     },
     keys = {
       { '<leader>fg', '<cmd>Telescope live_grep<cr>',  mode = 'n', desc = 'telescope live_grep' },
@@ -13,6 +15,7 @@ return {
     },
     config = function ()
       local telescope = require('telescope')
+      telescope.load_extension('conflicts')
       telescope.load_extension('frecency')
     end,
   },
@@ -24,6 +27,12 @@ return {
     opts = {
       -- See https://github.com/nvim-telescope/telescope-frecency.nvim/issues/270
       db_safe_mode = false,
+    },
+  },
+  {
+    'Snikimonkd/telescope-git-conflicts.nvim',
+    keys = {
+      { '<leader>fc', '<cmd>Telescope conflicts<cr>', mode = 'n', desc = 'telescope git conflicts' },
     },
   },
   {
