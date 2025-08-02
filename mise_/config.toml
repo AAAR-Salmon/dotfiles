@@ -32,3 +32,4 @@ uv = "0.8.3"
 aqua.cosign = true
 npm.bun = true
 pipx.uvx = true
+idiomatic_version_file_enable_tools = []
