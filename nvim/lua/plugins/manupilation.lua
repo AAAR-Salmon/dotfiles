@@ -57,6 +57,16 @@ return {
     },
   },
   {
+    'lewis6991/gitsigns.nvim',
+    opts = {},
+    keys = {
+      { '<leader>gaa', '<cmd>Gitsigns stage_buffer<cr>',        mode = 'n', desc = 'git add (current file)' },
+      { '<leader>gap', '<cmd>Gitsigns stage_hunk<cr>',          mode = 'n', desc = 'git add/{restore --staged} -p (this hunk)' },
+      { '<leader>gd',  '<cmd>Gitsigns preview_hunk_inline<cr>', mode = 'n', desc = 'git blame buffer' },
+      { '<leader>gb',  '<cmd>Gitsigns blame_buffer<cr>',        mode = 'n', desc = 'git blame buffer' },
+    },
+  },
+  {
     'Wansmer/treesj',
     dependencies = {
       'nvim-treesitter/nvim-treesitter',

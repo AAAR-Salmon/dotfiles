@@ -31,10 +31,6 @@ return {
     },
   },
   {
-    'lewis6991/gitsigns.nvim',
-    opts = {},
-  },
-  {
     'folke/trouble.nvim',
     opts = {},
     keys = {
