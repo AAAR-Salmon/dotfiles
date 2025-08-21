@@ -50,13 +50,6 @@ return {
     },
   },
   {
-    'FabijanZulj/blame.nvim',
-    cmd = { 'BlameToggle' },
-    opts = {
-      date_format = '%Y%m%d',
-    },
-  },
-  {
     'lewis6991/gitsigns.nvim',
     opts = {},
     keys = {
