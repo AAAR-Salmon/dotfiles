@@ -55,8 +55,8 @@ return {
     keys = {
       { '<leader>gaa', '<cmd>Gitsigns stage_buffer<cr>',        mode = 'n', desc = 'git add (current file)' },
       { '<leader>gap', '<cmd>Gitsigns stage_hunk<cr>',          mode = 'n', desc = 'git add/{restore --staged} -p (this hunk)' },
-      { '<leader>gd',  '<cmd>Gitsigns preview_hunk_inline<cr>', mode = 'n', desc = 'git blame buffer' },
-      { '<leader>gb',  '<cmd>Gitsigns blame_buffer<cr>',        mode = 'n', desc = 'git blame buffer' },
+      { '<leader>gd',  '<cmd>Gitsigns preview_hunk_inline<cr>', mode = 'n', desc = 'git diff' },
+      { '<leader>gb',  '<cmd>Gitsigns blame<cr>',               mode = 'n', desc = 'git blame buffer' },
     },
   },
   {
