@@ -8,6 +8,7 @@ vim.lsp.config('*', {
 })
 
 vim.lsp.enable('rust_analyzer')
+vim.lsp.enable('pylsp')
 
 vim.diagnostic.config({
   virtual_text = false,
