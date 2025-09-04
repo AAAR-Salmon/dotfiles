@@ -29,6 +29,7 @@ uv = "0.8.13"
 "pipx:trash-cli" = "0.24.5.26"
 "pipx:python-lsp-server" = "1.13.0"
 "npm:difit" = "2.2.1"
+"ubi:d-kuro/gwq" = "0.0.5"
 
 [settings]
 aqua.cosign = true
