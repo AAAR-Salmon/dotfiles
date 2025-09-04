@@ -27,6 +27,7 @@ return {
     opts = {
       -- See https://github.com/nvim-telescope/telescope-frecency.nvim/issues/270
       db_safe_mode = false,
+      show_filter_column = false,  -- フィルターカラム（ディレクトリ名）を非表示
     },
   },
   {
