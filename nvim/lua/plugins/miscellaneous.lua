@@ -27,17 +27,6 @@ return {
     end,
   },
   {
-    'rest-nvim/rest.nvim',
-    dependencies = {
-      'nvim-treesitter/nvim-treesitter',
-    },
-    ft = { 'http' },
-    cmd = { 'Rest' },
-    keys = {
-      { '<leader>rr', '<cmd>Rest run<cr>', mode = 'n', desc = 'HTTP request under cursor' },
-    },
-  },
-  {
     'mechatroner/rainbow_csv',
     ft = { 'csv' },
   },
