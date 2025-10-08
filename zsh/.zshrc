@@ -4,8 +4,8 @@ bindkey -e
 
 # Config command history
 export HISTFILE="$HOME/.history"
-export HISTSIZE=1000
-export SAVEHIST=10000
+export HISTSIZE=5000
+export SAVEHIST=100000
 ## Save history immediately
 setopt incappendhistory
 
