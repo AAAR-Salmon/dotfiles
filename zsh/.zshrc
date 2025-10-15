@@ -1,6 +1,6 @@
 # Reset keybinds
 bindkey -d
-bindkey -v
+bindkey -e
 
 # Config command history
 export HISTFILE="$HOME/.history"
