@@ -46,6 +46,9 @@ snippets:
   - name: git add patch
     keyword: gap
     snippet: git add -p
+  - name: git branch
+    keyword: gb
+    snippet: git branch
   - name: git commit
     keyword: gc
     snippet: git commit
