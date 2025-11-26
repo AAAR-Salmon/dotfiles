@@ -9,6 +9,8 @@ vim.lsp.config('*', {
 
 vim.lsp.enable('rust_analyzer')
 vim.lsp.enable('pylsp')
+vim.lsp.enable('denols')
+vim.lsp.enable('ts_ls')
 
 vim.diagnostic.config({
   virtual_text = false,

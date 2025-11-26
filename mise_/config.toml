@@ -24,12 +24,13 @@ uv = "0.9.7"
 "aqua:typst/typst" = "0.13.1"
 "npm:@marp-team/marp-cli" = "4.2.3"
 "npm:ccusage" = "17.1.3"
+"npm:difit" = "2.2.2"
 "npm:serve" = "14.2.5"
+"npm:typescript-language-server" = "5.1.3"
 "pipx:httpie" = "3.2.4"
 "pipx:thefuck" = { version = "3.32", uvx_args = "--python 3.8" }
 "pipx:trash-cli" = "0.24.5.26"
 "pipx:python-lsp-server" = "1.13.1"
-"npm:difit" = "2.2.2"
 "ubi:d-kuro/gwq" = "0.0.5"
 
 [settings]
