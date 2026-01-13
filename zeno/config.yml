@@ -39,6 +39,9 @@ snippets:
   - name: docker compose
     keyword: dc
     snippet: docker compose
+  - name: docker compose logs
+    keyword: dcl
+    snippet: docker compose logs -f --since 0s
   - name: thefuck
     keyword: f
     snippet: fuck
