@@ -116,7 +116,7 @@ snippets:
     snippet: git switch
   - name: git change worktree
     keyword: x
-    snippet: cd "$(gwq get)"
+    snippet: gwq cd
   - name: ls
     keyword: l
     snippet: ls -F
