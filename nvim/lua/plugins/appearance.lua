@@ -39,11 +39,19 @@ return {
   },
   {
     'folke/todo-comments.nvim',
+    event = { 'VeryLazy' },
     cmds = { 'TodoTelescope' },
     keys = {
       { '<leader>ft', '<cmd>TodoTelescope<cr>', mode = 'n', desc = 'TodoTelescope' },
     },
-    opts = {},
+    opts = {
+      keywords = {
+        REVIEW = {
+          icon = " ",
+          color = "#949070"
+        },
+      },
+    },
   },
   {
     'folke/noice.nvim',
