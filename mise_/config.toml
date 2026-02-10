@@ -23,6 +23,7 @@ uv = "0.10.0"
 "aqua:sharkdp/bat" = "0.26.1"
 "aqua:sharkdp/fd" = "10.3.0"
 "aqua:typst/typst" = "0.14.2"
+"github:d-kuro/gwq" = "0.0.12"
 "npm:@google/gemini-cli" = "0.24.0"
 "npm:@marp-team/marp-cli" = "4.2.3"
 "npm:ccusage" = "18.0.5"
@@ -33,7 +34,6 @@ uv = "0.10.0"
 "pipx:thefuck" = { version = "3.32", uvx_args = "--python 3.8" }
 "pipx:trash-cli" = "0.24.5.26"
 "pipx:python-lsp-server" = "1.14.0"
-"ubi:d-kuro/gwq" = "0.0.12"
 
 [settings]
 aqua.cosign = true
