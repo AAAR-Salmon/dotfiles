@@ -2,6 +2,11 @@
 bindkey -d
 bindkey -e
 
+# ^X^E to edit command with editor
+autoload -Uz edit-command-line
+zle -N edit-command-line
+bindkey '^X^E' edit-command-line
+
 # Config command history
 export HISTFILE="$HOME/.history"
 export HISTSIZE=5000
