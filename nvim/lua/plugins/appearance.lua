@@ -65,9 +65,6 @@ return {
   },
   {
     'shellRaining/hlchunk.nvim',
-    dependencies = {
-      'nvim-treesitter/nvim-treesitter',
-    },
     event = { 'BufReadPre', 'BufNewFile' },
     opts = {
       chunk = {

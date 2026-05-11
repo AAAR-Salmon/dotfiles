@@ -32,16 +32,10 @@ return {
   },
   {
     'nvim-treesitter/nvim-treesitter',
-    cmd = { 'TSInstall', 'TSUpdate' },
-    config = function ()
-      require('nvim-treesitter.configs').setup({
-        highlight = {
-          enable = true,
-        },
-        ensure_installed = {
-          'http',
-        },
-      })
+    lazy = false,
+    build = ':TSUpdate',
+    config = function()
+      require('nvim-treesitter').install { 'http' }
     end,
   },
   {

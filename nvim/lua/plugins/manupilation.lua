@@ -63,9 +63,6 @@ return {
   },
   {
     'Wansmer/treesj',
-    dependencies = {
-      'nvim-treesitter/nvim-treesitter',
-    },
     keys = {
       { '<leader>st', '<cmd>TSJToggle<cr>', mode = 'n', desc = 'Toggle join/split block' },
       { '<leader>sj', '<cmd>TSJJoin<cr>',   mode = 'n', desc = 'Join block' },
