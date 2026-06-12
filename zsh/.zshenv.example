@@ -3,10 +3,10 @@ export DOTFILES="$HOME/your/dotfiles/path"
 export ZDOTDIR="$DOTFILES/zsh"
 
 export PATH="$PATH:$HOME/.local/bin"
-export FPATH="$HOME/.local/share/zfunc:$FPATH"
+export FPATH="$HOME/.local/share/zsh/site-functions:$FPATH"
 
 export EDITOR="nvim"
-export PAGER="less -S"
+export PAGER="less -SR"
 
 skip_global_compinit=1
 
