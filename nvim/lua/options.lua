@@ -31,6 +31,10 @@ opt.fileencodings = { 'utf-8', 'sjis' }
 
 opt.helplang = { 'ja', 'en' }
 
+opt.foldmethod = 'expr'
+opt.foldexpr = 'v:lua.vim.treesitter.foldexpr()'
+opt.foldlevelstart = 99 -- 未設定だと全て折りたたまれる
+
 vim.api.nvim_create_autocmd('FileType', {
   pattern = '*',
   callback = function()
